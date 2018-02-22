@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Seattle Brewery Finder</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+</head>
+<body>
+    <head>
+        <div id="logo">
+            <h1>Seattle Brewery Finder</h1>
+        </div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Map</a>
+            <a href="">Breweries</a>
+            <a href="">About Us</a>
+        </nav>
+    </head>
+    <main>
+        <div class="checkbox">
+            <h3>Please select the type of beer you are looking for.</h3>
+            <form id="beer-list">
+                <input type="checkbox" name="beer" value="light">Light
+                <input type="checkbox" name="beer" value="dark">Dark
+                <input type="checkbox" name="beer" value="all"> Any/All
+            </form>
+        </div>
+        <div class="checkbox">
+            <h3>
+                Please select the options below to narrow down your search.
+            </h3>
+            <form id="amen-list">
+                <input type="checkbox" name="anemity" value="pet">Pet-Friendly
+                <input type="checkbox" name="anemity" value="family">Family-Friendly
+                <input type="checkbox" name="anemity" value="music">Music
+                <input type="checkbox" name="anemity" value="food">Food
+                <input type="checkbox" name="anemity" value="event">Events/Activities
+            </form>
+        </div>
+        <div class="checkbox">
+            <h3>
+                Select days in the week you are interested in visiting.
+            </h3>
+            <form id="days-open">
+                <input type="checkbox" name="day" value="weekends">Weekends
+                <input type="checkbox" name="day" value="monday">Monday
+                <input type="checkbox" name="day" value="tuesday">Tuesday
+                <input type="checkbox" name="day" value="wednesday">Wednesday
+                <input type="checkbox" name="day" value="thursday">Thursday
+                <input type="checkbox" name="day" value="friday">Friday
+            </form>
+        </div>
+        <div id="type-place">
+            <form id="area">
+                <h3>
+                    Enter a neighborhood you are looking for.
+                </h3>
+                <input type="text" name="neighborhood" placeholder="Enter neighborhood in Seattle Area">
+            </form>
+        </div>
+        <button type="search">Start Brewing!</button>
+    </main>
+    <footer>
+        <p>&copy Seattle Brewery Finders</p>
+    </footer>
+</body>
+</html>
