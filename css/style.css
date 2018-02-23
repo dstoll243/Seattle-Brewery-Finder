@@ -57,9 +57,7 @@ section div p {
 }
 
 #address {
-  /* float: right; */
   margin: 20px 30px 10px 10px;
-  /* width: 500px; */
   line-height: 25px;
 }
 
@@ -103,10 +101,11 @@ section div p {
   font-size: 24px;
 }
 
-footer {
+/* footer {
   position: absolute;
+  margin-top: 10px;
   bottom: 0;
   width: 100%;
   text-align: center;
   font-size: 12px;
-}
+} */
