@@ -1,0 +1,63 @@
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* group div */
+#group {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#group img {
+  margin: 15px;
+  border: 5px solid black;
+}
+
+#group p {
+  font-size: 16px;
+}
+
+/* mastermind class */
+.masterminds {
+  width: 75%;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.masterminds img {
+  border: 2px solid black;
+}
+
+.bio {
+  float: right;
+  text-align: left;
+  width: 75%;
+}
+
+.bio h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.bio h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.contact {
+  width: 25%;
+  height: 30px;
+  float: right;
+}
+
+.bio p{
+  font-size: 16px;
+}
