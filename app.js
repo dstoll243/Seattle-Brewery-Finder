@@ -2,7 +2,6 @@
 
 // global variables
 var allBrews = [];
-var blah = document.getElementById('blah');
 
 // object constructor for breweries
 function Brewery(name, kids, pets, food, events, page) {
@@ -13,7 +12,6 @@ function Brewery(name, kids, pets, food, events, page) {
   this.page = page;
   allBrews.push(this);
 }
-
 function makeBrews() {
   new Brewery('Standard Brewing', 'no', 'no', 'on-site', 'no', 'http://standardbrew.com/');
   new Brewery('Reuben\'s Brews', 'no', 'yes', 'food truck', 'yes', 'http://www.reubensbrews.com/');
@@ -33,31 +31,17 @@ function makeBrews() {
 makeBrews();
 console.log(allBrews);
 
-//push to local storage
-var result = [];
-// var ynPets = document.forms[0].elements[radio_name];
-// var ynFood = document.forms[0].elements[radio_name];
-// var ynEvents = document.forms[0].elements[radio_name];
+// var form = document.getElementById('form');
+var rBrewArray = [];
 
-function comparison(event) {
-  if(localStorage === result); {
-    localStorage.clear();
+
+function randomBrew() {
+  if(document.getElementById('kidsn').checked && document.getElementById('petsn').checked && document.getElementById('site').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[0]);
+    rBrewArray.push(allBrews[12]);
+    console.log(rBrewArray);
   }
-  var ynKids;
-  var radio = document.forms.elements[name];
-  for (var i=0; i < radio.length; i++) {
-    if (radio[i].checked ) {
-      // this.pets = ynPets.checked;
-      // this.food = ynFood.checked;
-      // this.events = ynEvents.checked;
-      ynKids = radio[i].value;
-      result.push(ynKids);
-    }
-  }
-  // var resultVal = JSON.stringify(result);
-  // localStorage.setItem('results', resultVal);
-  console.log(result);
-  // console.log(localStorage);
 }
 
-blah.addEventListener('submit', comparison);
+var button = document.getElementById('button');
+button.addEventListener('click', randomBrew);
