@@ -43,21 +43,33 @@ h2 {
   font-size: 24px;
   font-weight: bold;
   margin-top: 10px;
-  margin-bottom: 30px;
+  height: 30px;
+  float: left;
 }
 
 .bio h4 {
   font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
+  float: left;
+  width: 100%;
 }
 
 .contact {
-  width: 25%;
+  width: 300px;
   height: 30px;
   float: right;
+  margin-top: 5px;
+}
+
+.contact h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .bio p{
   font-size: 16px;
+  margin-top: 10px;
+  float: left;
 }
