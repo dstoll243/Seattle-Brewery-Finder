@@ -18,21 +18,21 @@
           <a href="">About Us</a>
       </nav>
   </header>
-  <main>
+  <main id="form">
       <div class="checkbox">
           <h3>Are you looking for a brewery that allows children?</h3>
           <form id="kids">
-              <input type="radio" name="kids" value="yes"><label>Yes</label>
-              <input type="radio" name="kids" value="no"><label>No</label>
+              <input id='kidsy' type="radio" name="kids" value="yes"><label>Yes</label>
+              <input id='kidsn' type="radio" name="kids" value="no"><label>No</label>
           </form>
       </div>
       <div class="checkbox">
           <h3>
               Are you looking for a brewery that allows pets?
           </h3>
-          <form id="amen-list">
-            <input type="radio" name="pets" value="yes"><label>Yes</label>
-            <input type="radio" name="pets" value="no"><label>No</label>
+          <form id="pets">
+            <input id='petsy' type="radio" name="pets" value="yes"><label>Yes</label>
+            <input id='petsn' type="radio" name="pets" value="no"><label>No</label>
           </form>
       </div>
       <div class="checkbox">
@@ -40,9 +40,9 @@
                 Are you looking for food at a brewery?
             </h3>
             <form id="food">
-              <input type="radio" name="food" value="on site"><label>On Site</label>
-              <input type="radio" name="food" value="food truck"><label>Food Truck</label>
-              <input type="radio" name="food" value="no"><label>No</label>
+              <input id='site' type="radio" name="food" value="on site"><label>On Site</label>
+              <input id='truck' type="radio" name="food" value="food truck"><label>Food Truck</label>
+              <input id='foodn' type="radio" name="food" value="no"><label>No</label>
             </form>
         </div>
       <div class="checkbox">
@@ -50,11 +50,11 @@
               Are you looking for an event or activity at a brewery?
           </h3>
           <form id="events">
-            <input type="radio" name="event" value="yes"><label>Yes</label>
-            <input type="radio" name="event" value="no"><label>No</label>
+            <input id='eventsy' type="radio" name="event" value="yes"><label>Yes</label>
+            <input id='eventsn' type="radio" name="event" value="no"><label>No</label>
           </form>
       </div>
-      <button type="search">Start Brewing!</button>
+      <button id='button' type="button" >Start Brewing!</button>
   </main>
   <footer>
       <p>&copy Seattle Brewery Finders</p>

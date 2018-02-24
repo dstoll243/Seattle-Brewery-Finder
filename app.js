@@ -31,4 +31,19 @@ function makeBrews() {
 makeBrews();
 console.log(allBrews);
 
+// var form = document.getElementById('form');
+var rBrewArray = [];
+
+
+function randomBrew() {
+  if(document.getElementById('kidsn').checked && document.getElementById('petsn').checked && document.getElementById('site').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[0]);
+    rBrewArray.push(allBrews[12]);
+    console.log(rBrewArray);
+  }
+}
+
+var button = document.getElementById('button');
+button.addEventListener('click', randomBrew);
+
 //push to local storage
