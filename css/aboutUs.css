@@ -19,6 +19,7 @@ h2 {
 
 #group p {
   font-size: 16px;
+  font-style: italic;
 }
 
 /* mastermind class */
@@ -33,10 +34,11 @@ h2 {
   border: 2px solid black;
 }
 
+/* bio class */
 .bio {
   float: right;
   text-align: left;
-  width: 75%;
+  width: 80%;
 }
 
 .bio h3 {
@@ -55,6 +57,13 @@ h2 {
   width: 100%;
 }
 
+.bio p{
+  font-size: 16px;
+  margin-top: 10px;
+  float: left;
+}
+
+/* contact class */
 .contact {
   width: 300px;
   height: 30px;
@@ -66,10 +75,4 @@ h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
-}
-
-.bio p{
-  font-size: 16px;
-  margin-top: 10px;
-  float: left;
 }
