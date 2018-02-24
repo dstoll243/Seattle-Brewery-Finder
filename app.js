@@ -1,6 +1,8 @@
 'use strict';
+
 // global variables
 var allBrews = [];
+
 // object constructor for breweries
 function Brewery(name, kids, pets, food, events, page) {
   this.name = name;
@@ -25,5 +27,8 @@ function makeBrews() {
   new Brewery('Populuxe Brewing', 'yes', 'yes', 'food truck', 'yes', 'https://www.populuxebrewing.com/');
   new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'https://outlanderbrewing.com/');
 }
+
 makeBrews();
 console.log(allBrews);
+
+//push to local storage
