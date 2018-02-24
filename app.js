@@ -81,6 +81,8 @@ function randomBrew() {
     rBrewArray.push(allBrews[11]);
     console.log(rBrewArray);
   }
+
+  // local storage
   var strBrew = JSON.stringify(rBrewArray);
   localStorage.setItem('Random Breweries', strBrew);
   var breweries = JSON.parse(strBrew);
@@ -104,6 +106,11 @@ function openOne() {
 }
 
 function doAll() {
+  // making sure every form has a check
+  if(!document.getElementById('kidsy').checked && !document.getElementById('kidsn').checked || !document.getElementById('petsy').checked && !document.getElementById('petsn').checked || !document.getElementById('truck').checked && !document.getElementById('site').checked && !document.getElementById('foodn').checked || !document.getElementById('eventsy').checked && !document.getElementById('eventsn').checked) {
+    alert('Please make a choice for each option so we can find you a place to drink');
+    return;
+  }
   if(rBrewArray !== []) {
     rBrewArray = [];
   }
