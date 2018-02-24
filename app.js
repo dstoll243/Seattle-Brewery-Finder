@@ -1,39 +1,89 @@
-'strict';
+'use strict';
 
-//global array
-var storedBrews = [];
+// global variables
+var allBrews = [];
 
-
-
-//constructor
-function Brewery(name, hood, kids, pets, food, events, days) {
+// object constructor for breweries
+function Brewery(name, kids, pets, food, events, page) {
   this.name = name;
-  this.hood = hood;
   this.kids = kids;
   this.pets = pets;
-  this.food = food;
   this.events = events;
-  this.days = days;
-  storedBrews.push(this);
+  this.page = page;
+  allBrews.push(this);
+}
+function makeBrews() {
+  new Brewery('Standard Brewing', 'no', 'no', 'on-site', 'no', 'http://standardbrew.com/');
+  new Brewery('Reuben\'s Brews', 'no', 'yes', 'food truck', 'yes', 'http://www.reubensbrews.com/');
+  new Brewery('Two Beers Brewing', 'no', 'yes', 'on-site', 'no', 'https://www.twobeersbrewery.com/');
+  new Brewery('Peddler Brewing', 'yes', 'yes', 'food truck', 'yes', 'https://www.peddlerbrewing.com/');
+  new Brewery('CloudBurst Brewing', 'no', 'yes', 'no', 'no', 'http://www.cloudburstbrew.com/');
+  new Brewery('Fremont Brewing', 'yes', 'yes', 'no', 'yes', 'https://www.fremontbrewing.com/');
+  new Brewery('Holy Mountain Brewing', 'no', 'no', 'no', 'no', 'https://holymountainbrewing.com/');
+  new Brewery('Optimism Brewing', 'yes', 'yes', 'food truck', 'yes', 'http://optimismbrewing.com/');
+  new Brewery('Ravenna Brewing Company', 'yes', 'yes', 'food truck', 'yes', 'http://www.ravennabrewing.com/');
+  new Brewery('Urban Family Brewing', 'yes', 'yes', 'food truck', 'no', 'http://www.urbanfamilybrewing.com/');
+  new Brewery('Hellbent Brewing', 'no', 'yes', 'food truck', 'yes', 'http://www.hellbentbrewingcompany.com/');
+  new Brewery('Populuxe Brewing', 'yes', 'yes', 'food truck', 'yes', 'https://www.populuxebrewing.com/');
+  new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'https://outlanderbrewing.com/');
 }
 
+makeBrews();
+console.log(allBrews);
+
+// var form = document.getElementById('form');
+var rBrewArray = [];
 
 
-function create() {
-  new Brewery('CloudBurst', 'downtown', 'no', 'no', 'no', 'no', 'no');
-  new Brewery('Freemont', 'Fremont', 'yes', 'yes', 'no', 'no', 'yes');
-  new Brewery('HellBent', 'Lake City', 'no', 'no', 'yes', 'yes', 'yes');
-  new Brewery('Holy Mountain Brewing', 'Interbay', 'no', 'no', 'no', 'no', 'yes');
-  new Brewery('Optimism Brewing', 'Capital Hill', 'no', 'no', 'no', 'no', 'yes');
-  new Brewery('Outlander Brewing Company', 'Fremont', 'no', 'no', 'no', 'no', 'no');
-  new Brewery('Peddler', 'Ballard', 'no', 'yes', 'no', 'yes', 'no');
-  new Brewery('Populuxe Brewing', 'Ballard', 'yes', 'yes', 'yes', 'yes', 'yes');
-  new Brewery('Ravenna Brewing Company', 'University District', 'no', 'no', 'yes', 'yes', 'no');
-  new Brewery('Reuben\'s Brews', 'Ballard', 'yes', 'yes', 'yes', 'yes', 'yes');
-  new Brewery('Standard Brewing', 'Central District', 'no', 'no', 'yes', 'no', 'no');
-  new Brewery('Two Beers Brewing', 'SoDo', 'no', 'no', 'yes', 'no', 'no');
-  new Brewery('Urban Family Brewing', 'Magnolia', 'yes', 'yes', 'yes', 'no', 'yes');
+function randomBrew() {
+  // no, no, onsite, no - Standard & Outlander
+  if(document.getElementById('kidsn').checked && document.getElementById('petsn').checked && document.getElementById('site').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[0]);
+    rBrewArray.push(allBrews[12]);
+    console.log(rBrewArray);
+  }
+  // no, no, foodn, no - Holy Mountain
+  if(document.getElementById('kidsn').checked && document.getElementById('petsn').checked && document.getElementById('foodn').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[6]);
+    console.log(rBrewArray);
+  }
+  // no, yes, onsite, no - 2 beers
+  if(document.getElementById('kidsn').checked && document.getElementById('petsy').checked && document.getElementById('site').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[2]);
+    console.log(rBrewArray);
+  }
+  // no yes, truck, yes - Hellbent
+  if(document.getElementById('kidsn').checked && document.getElementById('petsy').checked && document.getElementById('truck').checked && document.getElementById('eventsy').checked) {
+    rBrewArray.push(allBrews[10]);
+    console.log(rBrewArray);
+  }
+  // yes, yes, foodn, no - fremont
+  if(document.getElementById('kidsy').checked && document.getElementById('petsy').checked && document.getElementById('foodn').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[5]);
+    console.log(rBrewArray);
+  }
+  // yes, yes, truck, no = Urban family
+  if(document.getElementById('kidsy').checked && document.getElementById('petsy').checked && document.getElementById('truck').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[9]);
+    console.log(rBrewArray);
+  }
+  // n, y, no, no = Cloudburst
+  if(document.getElementById('kidsn').checked && document.getElementById('petsy').checked && document.getElementById('no').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[4]);
+    console.log(rBrewArray);
+  }
+  // yes, yes, truck, yes = reuban, peddler, optimism, ravenna, populuxe
+  if(document.getElementById('kidsy').checked && document.getElementById('petsy').checked && document.getElementById('truck').checked && document.getElementById('eventsy').checked) {
+    rBrewArray.push(allBrews[1]);
+    rBrewArray.push(allBrews[3]);
+    rBrewArray.push(allBrews[7]);
+    rBrewArray.push(allBrews[8]);
+    rBrewArray.push(allBrews[11]);
+    console.log(rBrewArray);
+  }
 }
 
-create();
-console.log('new brewery created');
+var button = document.getElementById('button');
+button.addEventListener('click', randomBrew);
+
+//push to local storage
