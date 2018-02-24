@@ -13,19 +13,19 @@ function Brewery(name, kids, pets, food, events, page) {
   allBrews.push(this);
 }
 function makeBrews() {
-  new Brewery('Standard Brewing', 'no', 'no', 'on-site', 'no', 'http://standardbrew.com/');
-  new Brewery('Reuben\'s Brews', 'no', 'yes', 'food truck', 'yes', 'http://www.reubensbrews.com/');
-  new Brewery('Two Beers Brewing', 'no', 'yes', 'on-site', 'no', 'https://www.twobeersbrewery.com/');
-  new Brewery('Peddler Brewing', 'yes', 'yes', 'food truck', 'yes', 'https://www.peddlerbrewing.com/');
-  new Brewery('CloudBurst Brewing', 'no', 'yes', 'no', 'no', 'http://www.cloudburstbrew.com/');
-  new Brewery('Fremont Brewing', 'yes', 'yes', 'no', 'yes', 'https://www.fremontbrewing.com/');
-  new Brewery('Holy Mountain Brewing', 'no', 'no', 'no', 'no', 'https://holymountainbrewing.com/');
-  new Brewery('Optimism Brewing', 'yes', 'yes', 'food truck', 'yes', 'http://optimismbrewing.com/');
-  new Brewery('Ravenna Brewing Company', 'yes', 'yes', 'food truck', 'yes', 'http://www.ravennabrewing.com/');
-  new Brewery('Urban Family Brewing', 'yes', 'yes', 'food truck', 'no', 'http://www.urbanfamilybrewing.com/');
-  new Brewery('Hellbent Brewing', 'no', 'yes', 'food truck', 'yes', 'http://www.hellbentbrewingcompany.com/');
-  new Brewery('Populuxe Brewing', 'yes', 'yes', 'food truck', 'yes', 'https://www.populuxebrewing.com/');
-  new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'https://outlanderbrewing.com/');
+  new Brewery('Standard Brewing', 'no', 'no', 'on-site', 'no', 'pages/standard.html');
+  new Brewery('Reuben\'s Brews', 'no', 'yes', 'food truck', 'yes', 'pages/reubens.html');
+  new Brewery('Two Beers Brewing', 'no', 'yes', 'on-site', 'no', 'pages/twobeers.html');
+  new Brewery('Peddler Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/peddler.html');
+  new Brewery('CloudBurst Brewing', 'no', 'yes', 'no', 'no', 'pages/cloudburst.html');
+  new Brewery('Fremont Brewing', 'yes', 'yes', 'no', 'yes', 'pages/fremont.html');
+  new Brewery('Holy Mountain Brewing', 'no', 'no', 'no', 'no', 'pages/holymt.html');
+  new Brewery('Optimism Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/optimism.html');
+  new Brewery('Ravenna Brewing Company', 'yes', 'yes', 'food truck', 'yes', 'pages/ravenna.html');
+  new Brewery('Urban Family Brewing', 'yes', 'yes', 'food truck', 'no', 'pages/urbanfam.html');
+  new Brewery('Hellbent Brewing', 'no', 'yes', 'food truck', 'yes', 'pages/hellbent.html');
+  new Brewery('Populuxe Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/populuxe.html');
+  new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'pages/outlander.html');
 }
 
 makeBrews();
@@ -68,7 +68,8 @@ function randomBrew() {
     console.log(rBrewArray);
   }
   // n, y, no, no = Cloudburst
-  if(document.getElementById('kidsn').checked && document.getElementById('petsy').checked && document.getElementById('no').checked && document.getElementById('eventsn').checked) {
+
+  if(document.getElementById('kidsn').checked && document.getElementById('petsy').checked && document.getElementById('foodn').checked && document.getElementById('eventsn').checked) {
     rBrewArray.push(allBrews[4]);
     console.log(rBrewArray);
   }
@@ -81,5 +82,37 @@ function randomBrew() {
     rBrewArray.push(allBrews[11]);
     console.log(rBrewArray);
   }
+
+
+  // local storage
+  var strBrew = JSON.stringify(rBrewArray);
+  localStorage.setItem('Random Breweries', strBrew);
+  var breweries = JSON.parse(strBrew);
+  console.log(breweries);
 }
-//push to local storage
+//button event listener
+var button = document.getElementById('button');
+button.addEventListener('click', doAll);
+
+
+//randomize one result within the array and open its page.
+function openOne() {
+  if(rBrewArray.length > 0) {
+    var choose = Math.floor(Math.random() * rBrewArray.length);
+    rBrewArray = rBrewArray[choose];
+  }
+  window.open(rBrewArray.page);
+}
+
+function doAll() {
+  // making sure every form has a check
+  if(!document.getElementById('kidsy').checked && !document.getElementById('kidsn').checked || !document.getElementById('petsy').checked && !document.getElementById('petsn').checked || !document.getElementById('truck').checked && !document.getElementById('site').checked && !document.getElementById('foodn').checked || !document.getElementById('eventsy').checked && !document.getElementById('eventsn').checked) {
+    alert('Please make a choice for each option so we can find you a place to drink');
+    return;
+  }
+  if(rBrewArray !== []) {
+    rBrewArray = [];
+  }
+  randomBrew();
+  openOne();
+}
