@@ -45,3 +45,14 @@ function randomBrew() {
 
 var button = document.getElementById('button');
 button.addEventListener('click', randomBrew);
+
+
+//randomize one result within the array and open its page.
+function openOne() {
+  if(rBrewArray.length > 0) {
+    var choose = Math.floor(Math.random() * rBrewArray.length);
+    rBrewArray = rBrewArray[choose];
+  }
+  window.open(rBrewArray.page);
+  console.log(rBrewArray);
+}
