@@ -81,7 +81,13 @@ function randomBrew() {
     rBrewArray.push(allBrews[11]);
     console.log(rBrewArray);
   }
+  var strBrew = JSON.stringify(rBrewArray);
+  localStorage.setItem('Random Breweries', strBrew);
+  var breweries = JSON.parse(strBrew);
+  console.log(breweries);
 }
+
+
 
 //button event listener
 var button = document.getElementById('button');
