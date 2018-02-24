@@ -19,14 +19,21 @@
       </nav>
   </header>
   <main>
-      <div class="checkbox">
-          <h3>Please select the type of beer you are looking for.</h3>
+    <p class="kidQuestion">1. Do you want to bring children?</p>
+        <ul class="kidAnswer">
+        <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Yes</label><br/>
+        <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">No</label><br/>
+        </ul>
+        <div id ="kidResult">Show me where I should go.</div>
+
+      <!-- <div class="checkbox">
+         < <h3>Please select the type of beer you are looking for.</h3>
           <form id="beer-list">
               <input type="checkbox" name="beer" value="light">Light
               <input type="checkbox" name="beer" value="dark">Dark
               <input type="checkbox" name="beer" value="all"> Any/All
-          </form>
-      </div>
+          </form>>
+      </div> -->
       <div class="checkbox">
           <h3>
               Please select the options below to narrow down your search.
@@ -65,5 +72,6 @@
   <footer>
       <p>&copy Seattle Brewery Finders</p>
   </footer>
+  <script src = "app.js"></script>
 </body>
 </html>
