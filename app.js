@@ -13,6 +13,7 @@ function Brewery(name, kids, pets, food, events, page) {
   allBrews.push(this);
 }
 function makeBrews() {
+<<<<<<< HEAD
   new Brewery('Standard Brewing', 'no', 'no', 'on-site', 'no', 'http://standardbrew.com/');
   new Brewery('Reuben\'s Brews', 'no', 'yes', 'food truck', 'yes', 'http://www.reubensbrews.com/');
   new Brewery('Two Beers Brewing', 'no', 'yes', 'on-site', 'no', 'https://www.twobeersbrewery.com/');
@@ -26,6 +27,21 @@ function makeBrews() {
   new Brewery('Hellbent Brewing', 'no', 'yes', 'food truck', 'yes', 'http://www.hellbentbrewingcompany.com/');
   new Brewery('Populuxe Brewing', 'yes', 'yes', 'food truck', 'yes', 'https://www.populuxebrewing.com/');
   new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'https://outlanderbrewing.com/');
+=======
+  new Brewery('Standard Brewing', 'no', 'no', 'on-site', 'no', 'pages/standard.html');
+  new Brewery('Reuben\'s Brews', 'no', 'yes', 'food truck', 'yes', 'pages/reubens.html');
+  new Brewery('Two Beers Brewing', 'no', 'yes', 'on-site', 'no', 'pages/twobeers.html');
+  new Brewery('Peddler Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/peddler.html');
+  new Brewery('CloudBurst Brewing', 'no', 'yes', 'no', 'no', 'pages/cloudburst.1.html');
+  new Brewery('Fremont Brewing', 'yes', 'yes', 'no', 'yes', 'pages/fremont.html');
+  new Brewery('Holy Mountain Brewing', 'no', 'no', 'no', 'no', 'pages/holymt.html');
+  new Brewery('Optimism Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/optimism.html');
+  new Brewery('Ravenna Brewing Company', 'yes', 'yes', 'food truck', 'yes', 'pages/ravenna.html');
+  new Brewery('Urban Family Brewing', 'yes', 'yes', 'food truck', 'no', 'pages/urbanfam.html');
+  new Brewery('Hellbent Brewing', 'no', 'yes', 'food truck', 'yes', 'pages/hellbent.html');
+  new Brewery('Populuxe Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/populuxe.html');
+  new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'pages/outlander.html');
+>>>>>>> 1c7fbddaf6a3cf6a4415bbdafaa52228a0f366f2
 }
 
 makeBrews();
@@ -83,7 +99,31 @@ function randomBrew() {
   }
 }
 
+<<<<<<< HEAD
 var button = document.getElementById('button');
 button.addEventListener('click', randomBrew);
 
 //push to local storage
+=======
+//button event listener
+var button = document.getElementById('button');
+button.addEventListener('click', doAll);
+
+
+//randomize one result within the array and open its page.
+function openOne() {
+  if(rBrewArray.length > 0) {
+    var choose = Math.floor(Math.random() * rBrewArray.length);
+    rBrewArray = rBrewArray[choose];
+  }
+  window.open(rBrewArray.page);
+}
+
+function doAll() {
+  if(rBrewArray !== []) {
+    rBrewArray = [];
+  }
+  randomBrew();
+  openOne();
+}
+>>>>>>> 1c7fbddaf6a3cf6a4415bbdafaa52228a0f366f2
