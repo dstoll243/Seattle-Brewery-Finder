@@ -32,6 +32,61 @@ nav a {
   margin-right: 15%;
 }
 
+#breweryInfo {
+  height: 200px;
+  margin: 10px;
+}
+
+section div h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section div a {
+  float: left;
+  margin-right: 10px;
+}
+
+section #breweryInfo img {
+  float: left;
+  margin-right: 10px;
+  height: 200px;
+}
+
+section div p {
+  margin: 10px;
+}
+
+#map {
+  margin: 10px 25px;
+  float: left;
+}
+
+#address {
+  margin: 20px 30px 10px 10px;
+  line-height: 25px;
+}
+
+#social {
+  width: 100%;
+  background-color: black;
+  height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#social ul li a {
+  text-decoration: none;
+  font-size: 125%;
+  color: lightgray;
+  margin: 1px 5%;
+}
+
+#social ul li img {
+  height: 15px;
+  width: 15px;
+}
+
 .checkbox {
   width: 80%;
   margin: auto;
@@ -52,9 +107,11 @@ nav a {
   font-size: 24px;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
+footer{
+  clear: both;
+  position: bottom;
+  /* margin-top: 10px; */
+  /* bottom: 0; */
   width: 100%;
   text-align: center;
   font-size: 12px;
