@@ -47,6 +47,11 @@ section div a {
   margin-right: 10px;
 }
 
+section #breweryInfo img {
+  float: left;
+  margin-right: 10px;
+}
+
 section div p {
   margin: 10px;
 }
