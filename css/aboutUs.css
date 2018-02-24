@@ -39,6 +39,8 @@ h2 {
   float: right;
   text-align: left;
   width: 80%;
+  height: 300px;
+  /* border: 1px solid black; */
 }
 
 .bio h3 {
