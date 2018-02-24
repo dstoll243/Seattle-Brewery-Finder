@@ -81,6 +81,7 @@ function randomBrew() {
     rBrewArray.push(allBrews[11]);
     console.log(rBrewArray);
   }
+  console.log('no breweries were found');
 }
 //button event listener
 var button = document.getElementById('button');
