@@ -67,6 +67,20 @@ function randomBrew() {
     rBrewArray.push(allBrews[9]);
     console.log(rBrewArray);
   }
+  // n, y, no, no = Cloudburst
+  if(document.getElementById('kidsn').checked && document.getElementById('petsy').checked && document.getElementById('no').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[4]);
+    console.log(rBrewArray);
+  }
+  // yes, yes, truck, yes = reuban, peddler, optimism, ravenna, populuxe
+  if(document.getElementById('kidsy').checked && document.getElementById('petsy').checked && document.getElementById('truck').checked && document.getElementById('eventsy').checked) {
+    rBrewArray.push(allBrews[1]);
+    rBrewArray.push(allBrews[3]);
+    rBrewArray.push(allBrews[7]);
+    rBrewArray.push(allBrews[8]);
+    rBrewArray.push(allBrews[11]);
+    console.log(rBrewArray);
+  }
 }
 
 var button = document.getElementById('button');
