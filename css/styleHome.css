@@ -62,8 +62,17 @@ body {
     font-size: 12px;
   }
 
-  h2 {
+  section h2 {
     text-align: center;  
     color: goldenrod;
-    font-size: 150%;
+    font-size: 350%;
+  }
+  section p {
+      text-align: center;
+      margin-right: 25%;
+      margin-left: 25%;
+  }
+
+  .map {
+      align: center;
   }
