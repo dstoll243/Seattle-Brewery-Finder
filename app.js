@@ -2,6 +2,7 @@
 
 // global variables
 var allBrews = [];
+var blah = document.getElementById('blah');
 
 // object constructor for breweries
 function Brewery(name, kids, pets, food, events, page) {
@@ -33,3 +34,30 @@ makeBrews();
 console.log(allBrews);
 
 //push to local storage
+var result = [];
+// var ynPets = document.forms[0].elements[radio_name];
+// var ynFood = document.forms[0].elements[radio_name];
+// var ynEvents = document.forms[0].elements[radio_name];
+
+function comparison(event) {
+  if(localStorage === result); {
+    localStorage.clear();
+  }
+  var ynKids;
+  var radio = document.forms.elements[name];
+  for (var i=0; i < radio.length; i++) {
+    if (radio[i].checked ) {
+      // this.pets = ynPets.checked;
+      // this.food = ynFood.checked;
+      // this.events = ynEvents.checked;
+      ynKids = radio[i].value;
+      result.push(ynKids);
+    }
+  }
+  // var resultVal = JSON.stringify(result);
+  // localStorage.setItem('results', resultVal);
+  console.log(result);
+  // console.log(localStorage);
+}
+
+blah.addEventListener('submit', comparison);
