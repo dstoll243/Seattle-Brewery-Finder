@@ -88,9 +88,6 @@ function randomBrew() {
   var breweries = JSON.parse(strBrew);
   console.log(breweries);
 }
-
-
-
 //button event listener
 var button = document.getElementById('button');
 button.addEventListener('click', doAll);
@@ -117,3 +114,4 @@ function doAll() {
   randomBrew();
   openOne();
 }
+

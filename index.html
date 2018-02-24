@@ -3,62 +3,89 @@
 <head>
   <meta charset="utf-8" />
   <title>Seattle Brewery Finder</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/reset.css" /> -->
 </head>
 <body>
-  <header>
-      <div id="logo">
-          <h1>Seattle Brewery Finder</h1>
-      </div>
-      <nav>
-          <a href="">Home</a>
-          <a href="">Map</a>
-          <a href="">Breweries</a>
-          <a href="">About Us</a>
-      </nav>
-  </header>
-  <main id="form">
-      <div class="checkbox">
-          <h3>Are you looking for a brewery that allows children?</h3>
-          <form id="kids">
-              <input id='kidsy' type="radio" name="kids" value="yes"><label>Yes</label>
-              <input id='kidsn' type="radio" name="kids" value="no"><label>No</label>
-          </form>
-      </div>
-      <div class="checkbox">
-          <h3>
-              Are you looking for a brewery that allows pets?
-          </h3>
-          <form id="pets">
-            <input id='petsy' type="radio" name="pets" value="yes"><label>Yes</label>
-            <input id='petsn' type="radio" name="pets" value="no"><label>No</label>
-          </form>
-      </div>
-      <div class="checkbox">
-            <h3>
-                Are you looking for food at a brewery?
-            </h3>
-            <form id="food">
-              <input id='site' type="radio" name="food" value="on site"><label>On Site</label>
-              <input id='truck' type="radio" name="food" value="food truck"><label>Food Truck</label>
-              <input id='foodn' type="radio" name="food" value="no"><label>No</label>
-            </form>
-        </div>
-      <div class="checkbox">
-          <h3>
-              Are you looking for an event or activity at a brewery?
-          </h3>
-          <form id="events">
-            <input id='eventsy' type="radio" name="event" value="yes"><label>Yes</label>
-            <input id='eventsn' type="radio" name="event" value="no"><label>No</label>
-          </form>
-      </div>
-      <button id='button' type="button" >Start Brewing!</button>
-  </main>
-  <footer>
-      <p>&copy Seattle Brewery Finders</p>
-  </footer>
-  <script src="app.js"></script>
+    <div class="wrapper">
+        <header>
+            <h1>Seattle Brewery Finder</h1>
+            <nav>
+                <ul>
+                    <li><a href="" class="current">Home</a></li>
+                    <li><a href="">Map</a></li>
+                    <li><a href="">Brewerys</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="courses">
+            <article>
+                <figure>
+                    <img src="images/brewImages/beerfood.jpg" alt="Beer & Food" width="260"/>
+                    <figcaption>Enjoy a tasty meal!</figcaption>
+                </figure>
+                <div class="checkbox">
+                    <h3>Are you looking for a brewery that allows children?</h3>
+                    <form id="kids">
+                        <input id='kidsy' type="radio" name="kids" value="yes"><label>Yes</label>
+                        <input id='kidsn' type="radio" name="kids" value="no"><label>No</label>
+                    </form>
+                </div>
+                <br>
+                <div class="checkbox">
+                    <h3>
+                        Are you looking for a brewery that allows pets?
+                    </h3>
+                    <form id="pets">
+                      <input id='petsy' type="radio" name="pets" value="yes"><label>Yes</label>
+                      <input id='petsn' type="radio" name="pets" value="no"><label>No</label>
+                    </form>
+                </div>
+            </article>    
+            <article>
+                <figure>
+                    <img src="images/brewImages/beercup.jpg" alt="Lagger" width="260"/>
+                    <figcaption>Enjoy a good beer!</figcaption>
+                </figure>
+                <div class="checkbox">
+                    <h3>
+                        Are you looking for food at a brewery?
+                    </h3>
+                    <form id="food">
+                      <input id='site' type="radio" name="food" value="on site"><label>On Site</label>
+                      <input id='truck' type="radio" name="food" value="food truck"><label>Food Truck</label>
+                      <input id='foodn' type="radio" name="food" value="no"><label>No</label>
+                    </form>
+                    <br>
+                    <h3>
+                        Are you looking for an event or activity at a brewery?
+                    </h3>
+                    <form id="events">
+                      <input id='eventsy' type="radio" name="event" value="yes"><label>Yes</label>
+                      <input id='eventsn' type="radio" name="event" value="no"><label>No</label>
+                    </form>
+                    <br>    
+                    <button id='button' type="button" >Start Brewing!</button>
+                </div>
+            </article>    
+        </section>
+        <aside>
+            <section class="popular-recipes">
+                <h2>Popular Events</h2>
+                <a href="">Dungeons & Dragons</a>
+                <a href="">Brew Tasting in Seattle</a>
+                <a href="">Brewery of the Week</a>
+                <a href="">Brew Specials</a>
+            </section>
+            <section class="contact-details">
+                
+            </section>
+        </aside>
+        <footer>
+            &copy; Seattle Brewery Finder
+        </footer>
+    </div><!-- .wrapper -->
+    <script src="app.js"></script>
 </body>
 </html>
