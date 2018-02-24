@@ -32,4 +32,17 @@ function makeBrews() {
 makeBrews();
 console.log(allBrews);
 
+function() {
+    var questions = [{
+        question: "Are you looking for a brewery that allows children?",
+        choices: [yes,no],
+        kidAnswer: 2
+    }, {
+        question: "Are you looking for a brewery that allows pets?",
+        choices: [yes, no],
+        petAnswer: 7
+    }]
+};
+
+
 //push to local storage
