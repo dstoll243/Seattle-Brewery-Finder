@@ -20,44 +20,38 @@
   </header>
   <main>
       <div class="checkbox">
-          <h3>Please select the type of beer you are looking for.</h3>
-          <form id="beer-list">
-              <input type="checkbox" name="beer" value="light">Light
-              <input type="checkbox" name="beer" value="dark">Dark
-              <input type="checkbox" name="beer" value="all"> Any/All
+          <h3>Are you looking for a brewery that allows children?</h3>
+          <form id="kids">
+              <input type="radio" name="kids" value="yes"><label>Yes</label>
+              <input type="radio" name="kids" value="no"><label>No</label>
           </form>
       </div>
       <div class="checkbox">
           <h3>
-              Please select the options below to narrow down your search.
+              Are you looking for a brewery that allows pets?
           </h3>
           <form id="amen-list">
-              <input type="checkbox" name="anemity" value="pet">Pet-Friendly
-              <input type="checkbox" name="anemity" value="family">Family-Friendly
-              <input type="checkbox" name="anemity" value="music">Music
-              <input type="checkbox" name="anemity" value="food">Food
-              <input type="checkbox" name="anemity" value="event">Events/Activities
+            <input type="radio" name="pets" value="yes"><label>Yes</label>
+            <input type="radio" name="pets" value="no"><label>No</label>
           </form>
       </div>
       <div class="checkbox">
+            <h3>
+                Are you looking for food at a brewery?
+            </h3>
+            <form id="food">
+              <input type="radio" name="food" value="on site"><label>On Site</label>
+              <input type="radio" name="food" value="food truck"><label>Food Truck</label>
+              <input type="radio" name="food" value="no"><label>No</label>
+            </form>
+        </div>
+      <div class="checkbox">
           <h3>
-              Select days in the week you are interested in visiting.
+              Are you looking for an event or activity at a brewery?
           </h3>
-          <form id="days-open">
-              <input type="checkbox" name="day" value="weekends">Weekends
-              <input type="checkbox" name="day" value="monday">Monday
-              <input type="checkbox" name="day" value="tuesday">Tuesday
-              <input type="checkbox" name="day" value="wednesday">Wednesday
-              <input type="checkbox" name="day" value="thursday">Thursday
-              <input type="checkbox" name="day" value="friday">Friday
-          </form>
-      </div>
-      <div id="type-place">
-          <form id="area">
-              <h3>
-                  Enter a neighborhood you are looking for.
-              </h3>
-              <input type="text" name="neighborhood" placeholder="Enter neighborhood in Seattle Area">
+          <form id="events">
+            <input type="radio" name="event" value="yes"><label>Yes</label>
+            <input type="radio" name="event" value="no"><label>No</label>
           </form>
       </div>
       <button type="search">Start Brewing!</button>
@@ -65,5 +59,6 @@
   <footer>
       <p>&copy Seattle Brewery Finders</p>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
