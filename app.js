@@ -12,7 +12,6 @@ function Brewery(name, kids, pets, food, events, page) {
   this.page = page;
   allBrews.push(this);
 }
-
 function makeBrews() {
   new Brewery('Standard Brewing', 'no', 'no', 'on-site', 'no', 'http://standardbrew.com/');
   new Brewery('Reuben\'s Brews', 'no', 'yes', 'food truck', 'yes', 'http://www.reubensbrews.com/');
@@ -32,6 +31,19 @@ function makeBrews() {
 makeBrews();
 console.log(allBrews);
 
+// var form = document.getElementById('form');
+var rBrewArray = [];
 
+
+function randomBrew() {
+  if(document.getElementById('kidsn').checked && document.getElementById('petsn').checked && document.getElementById('site').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[0]);
+    rBrewArray.push(allBrews[12]);
+    console.log(rBrewArray);
+  }
+}
+
+var button = document.getElementById('button');
+button.addEventListener('click', randomBrew);
 
 //push to local storage
