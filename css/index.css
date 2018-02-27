@@ -13,9 +13,53 @@ body {
     margin: 20px auto 20px auto;
     border: 2px solid #000000;
     background-color: #ffffff;}
-
-#marquee {height: 350px;}
-
+/* Photo banner*/
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px;
+    background: white;
+}
+.photobanner {
+    height: 230px;
+    width: auto;
+    margin-bottom: 5px;
+}
+.photbanner img {
+    margin-bottom: 10px;
+    padding-right: 1px;
+    height: 230px;
+    width: auto;
+}
+.photobanner img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.photbanner img:hover {
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 5px);
+    -moz-box-shadow: 0px 3px 5px);
+    box-shadow: 0px 3px 5px);
+}
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+    -ms-animation: bannermove 30s linear infinite;
+    -o-animation: bannermove 30s linear infinite;
+    animation: bannermove 30s linear infinite;
+}
+@keyframes "bannermove" {
+    0% {margin-left: 0px;}
+    100% {margin-left: -200%;}
+}
+/* Photo banner code ends*/
 header {
     height: 160px;
     background-image: url(../images/brewImages/cheers.jpg);
