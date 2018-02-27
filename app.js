@@ -17,7 +17,7 @@ function makeBrews() {
   new Brewery('Reuben\'s Brews', 'no', 'yes', 'food truck', 'yes', 'pages/reubens.html');
   new Brewery('Two Beers Brewing', 'no', 'yes', 'on-site', 'no', 'pages/twobeers.html');
   new Brewery('Peddler Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/peddler.html');
-  new Brewery('CloudBurst Brewing', 'no', 'yes', 'no', 'no', 'pages/cloudburst.1.html');
+  new Brewery('CloudBurst Brewing', 'no', 'yes', 'no', 'no', 'pages/cloudburst.html');
   new Brewery('Fremont Brewing', 'yes', 'yes', 'no', 'yes', 'pages/fremont.html');
   new Brewery('Holy Mountain Brewing', 'no', 'no', 'no', 'no', 'pages/holymt.html');
   new Brewery('Optimism Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/optimism.html');
@@ -68,7 +68,7 @@ function randomBrew() {
     console.log(rBrewArray);
   }
   // n, y, no, no = Cloudburst
-  if(document.getElementById('kidsn').checked && document.getElementById('petsy').checked && document.getElementById('no').checked && document.getElementById('eventsn').checked) {
+  if(document.getElementById('kidsn').checked && document.getElementById('petsy').checked && document.getElementById('foodn').checked && document.getElementById('eventsn').checked) {
     rBrewArray.push(allBrews[4]);
     console.log(rBrewArray);
   }
@@ -81,8 +81,13 @@ function randomBrew() {
     rBrewArray.push(allBrews[11]);
     console.log(rBrewArray);
   }
-}
 
+  // local storage
+  var strBrew = JSON.stringify(rBrewArray);
+  localStorage.setItem('Random Breweries', strBrew);
+  var breweries = JSON.parse(strBrew);
+  console.log(breweries);
+}
 //button event listener
 var button = document.getElementById('button');
 if(button) {
@@ -94,11 +99,18 @@ function openOne() {
   if(rBrewArray.length > 0) {
     var choose = Math.floor(Math.random() * rBrewArray.length);
     rBrewArray = rBrewArray[choose];
+    window.open(rBrewArray.page);
+  }else {alert('Sorry, no brew match your description');
+    return;
   }
-  window.open(rBrewArray.page);
 }
 
 function doAll() {
+  // making sure every form has a check
+  if(!document.getElementById('kidsy').checked && !document.getElementById('kidsn').checked || !document.getElementById('petsy').checked && !document.getElementById('petsn').checked || !document.getElementById('truck').checked && !document.getElementById('site').checked && !document.getElementById('foodn').checked || !document.getElementById('eventsy').checked && !document.getElementById('eventsn').checked) {
+    alert('Please make a choice for each option so we can find you a place to drink');
+    return;
+  }
   if(rBrewArray !== []) {
     rBrewArray = [];
   }
