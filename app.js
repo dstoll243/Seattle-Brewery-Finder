@@ -1,5 +1,26 @@
 'use strict';
-
+$(document).ready(function(){
+  if ( document.referrer == null || document.referrer.indexOf(window.location.hostname) < 0 ) {
+  $("#verify").modal({opacity:85, position: ["20%",""], onOpen: function (dialog) {
+      dialog.overlay.fadeIn('slow', function () {
+          dialog.container.slideDown('slow', function () {
+              dialog.data.fadeIn('slow');
+              return false;
+          });
+      });
+  }});
+  }
+  });
+  function redirect(url) {
+    if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){
+        var referLink = document.createElement('a');
+        referLink.href = url;
+        document.body.appendChild(referLink);
+        referLink.click();
+    } else {
+        location.href = url;
+    }
+}
 // global variables
 var allBrews = [];
 
@@ -116,3 +137,5 @@ function doAll() {
   randomBrew();
   openOne();
 }
+
+
