@@ -85,8 +85,9 @@ function randomBrew() {
 
 //button event listener
 var button = document.getElementById('button');
-button.addEventListener('click', doAll);
-
+if(button) {
+  button.addEventListener('click', doAll);
+}
 
 //randomize one result within the array and open its page.
 function openOne() {
@@ -108,11 +109,10 @@ function doAll() {
 //Home menu popup
 var ageCheck = false;
 var older = document.getElementById('older');
-var younger = document.getElementById('younger');
+var younger = document.getElementById('young');
 var popUp = document.getElementById('popup');
-var popUpStyle = popUp.style;
 
-  //hide popup if 21 and older
+//hide popup if 21 and older
 function showPop() {
   ageCheck = true;
   if(ageCheck === true) {
@@ -122,8 +122,7 @@ function showPop() {
 
 //take elsewhere is too young
 function tooYoung() {
-    window.open('https://disneyland.disney.go.com/');
-  }
+  window.open('https://disneyland.disney.go.com/');
 }
 
 older.addEventListener('click', showPop);
