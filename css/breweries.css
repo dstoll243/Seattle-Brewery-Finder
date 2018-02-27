@@ -1,5 +1,6 @@
 header, section, footer, aside, nav, article, figure, figcaption {
   display: block;}
+
 body {
   background-color: #80736A;
   background-image: url("../images/brewImages/summerdrink.jpg");
@@ -16,17 +17,23 @@ header {
   background-position: right top;
 }
 
-h1 {
-  text-indent: 20px;
+#logo h1 {
   width: 940px;
   height: 130px;
-  margin: 0px;
   text-align: center;
   color: rgb(170, 166, 166);
+  font-size: 36px;
+}
+
+nav, footer {
+  clear: both;
+  color: #ffffff;
+  background-color: #80736A;
+  height: 30px;
+  text-align: center;
 }
 
 #main_nav ul {
-  background: white;
   float: left;
   -webkit-transition: .5s;
   transition: .5s;
@@ -35,7 +42,7 @@ h1 {
 #main_nav li {
   float: left;
   position: relative;
-  width: 150px;
+  width: 225px;
   list-style: none;
   -webkit-transition: .5s;
   transition: .5s;
@@ -83,15 +90,15 @@ h1 {
 }
 
 #breweryInfo {
-  height: 200px;
+  height: 250px;
   margin: 10px;
 }
 
-section {
+#wrapper {
   width: 940px;
   margin: 20px auto 20px auto;
   border: 2px solid #000000;
-  background-color: #ffffff;}
+  background-color: #ffffff;
 }
 
 section div h2 {
@@ -126,7 +133,7 @@ section div p {
 
 #social {
   width: 100%;
-  background-color: black;
+  background-color: #80736A;
   height: 30px;
   text-align: center;
   margin-bottom: 10px;
@@ -134,16 +141,13 @@ section div p {
 
 #social ul li a {
   text-decoration: none;
-  font-size: 125%;
-  color: lightgray;
-  margin: 1px 5%;
+  font-size: 100%;
+  color: black;
+  margin: 1px 4%;
+  padding-top: 5px;
 }
 
 #social ul li img {
   height: 15px;
   width: 15px;
 }
-
-footer {
-  font-size: 80%;
-  padding: 7px 0px 0px 20px;}
