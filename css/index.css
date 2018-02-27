@@ -14,31 +14,31 @@ body {
     border: 2px solid #000000;
     background-color: #ffffff;}
 /* Photo banner*/
-/* .container {
+.container {
     width: 100%;
     overflow: hidden;
     margin: 10px;
     background: white;
 }
-.photobanner {
+.slideshow {
     height: 230px;
     width: auto;
     margin-bottom: 5px;
 }
-.photbanner img {
+.slideshow img {
     margin-bottom: 10px;
     padding-right: 1px;
     height: 230px;
     width: auto;
 }
-.photobanner img {
+.slideshow img {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-.photbanner img:hover {
+.slideshow img:hover {
     -webkit-transform: scale(1.2);
     -o-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -58,17 +58,27 @@ body {
 @keyframes "bannermove" {
     0% {margin-left: 0px;}
     100% {margin-left: -200%;}
-} */
-
-/* Photo banner code ends*/
-
-.marquee {
-    width: 100%;
-    overflow: hidden;
-    border: 1px solid #ccc;
+} 
+@-moz-keyframes bannermove {
+    0% {margin-left: 0px;}
+    100% {margin-left: -200%;}
 }
+@-webkit-keyframes "bannermove" {
+    0% {margin-left: 0px;}
+    100% {margin-left: -200%;}
+}
+@-ms-keyframes "bannermove" {
+    0% {margin-left: 0px;}
+    100% {margin-left: -200%;}
+}
+@-o-keyframes "bannermove" {
+    0% {margin-left: 0px;}
+    100% {margin-left: -200%;}
+}
+
 /* Photo banner code ends*/
-header {
+
+
     height: 160px;
     background-image: url(../images/brewImages/cheers.jpg);
     background-size: 950px;
