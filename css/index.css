@@ -14,7 +14,7 @@ body {
     border: 2px solid #000000;
     background-color: #ffffff;}
 /* Photo banner*/
-.container {
+/* .container {
     width: 100%;
     overflow: hidden;
     margin: 10px;
@@ -58,6 +58,14 @@ body {
 @keyframes "bannermove" {
     0% {margin-left: 0px;}
     100% {margin-left: -200%;}
+} */
+
+/* Photo banner code ends*/
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
 }
 /* Photo banner code ends*/
 header {
