@@ -176,3 +176,75 @@ section p {
   -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
   box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
 }
+
+/* Photo banner*/
+.container {
+  width: 940px;
+  overflow: hidden;
+  margin: 10px auto;
+  background: white;
+}
+
+/* width needs to be total of all the widths */
+
+.slideshow {
+  height: 233px;
+  width: 4300px;
+  margin-bottom: 5px;
+  /* font-size: 0; */
+}
+.slideshow img {
+  margin-bottom: 10px;
+  padding-right: 2px;
+  height: 233px;
+  width: 350;
+}
+.slideshow img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+} 
+.slideshow img:hover {
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 5px;
+  -moz-box-shadow: 0px 3px 5px;
+  box-shadow: 0px 3px 5px;
+}
+.first {
+  -webkit-animation: bannermove 45s linear infinite;
+  -moz-animation: bannermove 45s linear infinite;
+  -ms-animation: bannermove 45s linear infinite;
+  -o-animation: bannermove 45s linear infinite;
+  animation: bannermove 45s linear infinite;
+}
+
+/* margin left needs to be total of all the images widths once they are scaled down*/
+
+@keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -100%;}
+} 
+@-moz-keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -100%;}
+}
+@-webkit-keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -100%;}
+}
+@-ms-keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -100%;}
+}
+@-o-keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -100%;}
+}
+
+/* Photo banner code ends*/
