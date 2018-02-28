@@ -31,6 +31,7 @@ function makeBrews() {
 makeBrews();
 console.log(allBrews);
 
+
 // var form = document.getElementById('form');
 var rBrewArray = [];
 
@@ -134,8 +135,9 @@ function showPop() {
 
 //take elsewhere is too young
 function tooYoung() {
-  window.open('https://disneyland.disney.go.com/');
+  window.location.replace('https://disneyland.disney.go.com/');
 }
 
 older.addEventListener('click', showPop);
 younger.addEventListener('click', tooYoung);
+
