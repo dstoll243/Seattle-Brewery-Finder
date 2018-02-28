@@ -27,21 +27,27 @@ header {
 
 /* mastermind class */
 .masterminds {
-  width: 75%;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 85%;
+  margin: 50px auto;
 }
 
-.masterminds img {
+.masterminds .name {
   border: 2px solid black;
+  float: left;
+  margin-right: 10px;
+}
+
+.masterminds .name2 {
+  border: 2px solid black;
+  float: right;
+  /* margin-bottom: 10px; */
 }
 
 /* bio class */
 .bio {
-  float: right;
+  /* float: right; */
   text-align: left;
-  width: 80%;
+  width: 100%;
   height: 300px;
   /* border: 1px solid black; */
 }
@@ -51,21 +57,23 @@ header {
   font-weight: bold;
   margin-top: 10px;
   height: 30px;
-  float: left;
+  width: 400px;
+  /* float: left; */
+  margin-right: 0px;
 }
 
 .bio h4 {
   font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
-  float: left;
+  /* float: left; */
   width: 100%;
 }
 
 .bio p{
   font-size: 16px;
   margin-top: 10px;
-  float: left;
+  /* float: left; */
 }
 
 /* contact class */
@@ -80,4 +88,5 @@ header {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  display: inline-block;
 }
