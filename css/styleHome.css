@@ -101,26 +101,6 @@ body {
     background-color: #ffffff;
   }
 
-  .checkbox {
-    width: 80%;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-  
-  .checkbox h3 {
-    font-size: 24px;
-  }
-  
-  #type-place {
-    width: 80%;
-    margin: auto;
-  }
-  
-  #type-place h3 {
-    font-size: 24px;
-  }
-  
   footer {
     position: bottom;
     bottom: 0;
@@ -128,30 +108,6 @@ body {
     text-align: center;
     font-size: 12px;
   }
-
-.checkbox {
-  width: 80%;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-.checkbox h3 {
-  font-size: 24px;
-}
-
-#type-place {
-  width: 80%;
-  margin: auto;
-}
-
-#type-place h3 {
-  font-size: 24px;
-}
-
-#someWords {
-  width: 950px;
-}
 
 footer {
   position: bottom;
@@ -161,21 +117,16 @@ footer {
   font-size: 12px;
 }
 
-section h2 {
-  text-align: center;  
-  color: goldenrod;
-  font-size: 350%;
-  margin-top: 50px;
-  margin-bottom: 50px; 
-}
 section p {
+  margin-top: 25px;
     text-align: center;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: 20px;
 }
 
 #map {
-  margin-top: 100px;
+  margin-top: 25px;
   text-align: center;
 }
 
@@ -260,7 +211,7 @@ section p {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 } 
-.slideshow img:hover {
+/* .slideshow img:hover {
   -webkit-transform: scale(1.2);
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -269,7 +220,7 @@ section p {
   -webkit-box-shadow: 0px 3px 5px;
   -moz-box-shadow: 0px 3px 5px;
   box-shadow: 0px 3px 5px;
-}
+} */
 .first {
   -webkit-animation: bannermove 45s linear infinite;
   -moz-animation: bannermove 45s linear infinite;
@@ -302,4 +253,3 @@ section p {
 }
 
 /* Photo banner code ends*/
->>>>>>> c4c07f299a48feb69b5e8ccf313b019869e11f31
