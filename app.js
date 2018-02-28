@@ -130,6 +130,7 @@ function showPop() {
   ageCheck = true;
   if(ageCheck === true) {
     popUp.style.display = 'none';
+    localStorage.setItem('showPop', 'true');
   }
 }
 
@@ -140,4 +141,3 @@ function tooYoung() {
 
 older.addEventListener('click', showPop);
 younger.addEventListener('click', tooYoung);
-
