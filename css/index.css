@@ -20,19 +20,22 @@ header {
     background-size: 950px;
     background-position: right top;
 }
+
 h1 {
     text-indent: 20px;
     width: 940px;
     height: 130px;
     margin: 0px;
     text-align: center;
-    color: #F3B802;
+    color: rgb(170, 166, 166);
+    padding-top: 5px;
 }
 nav, footer {
     clear: both;
     color: #ffffff;
     background-color: #80736A;
     height: 30px;
+    text-align: center;
 }
 
 /* TOP NAV */
@@ -43,12 +46,17 @@ nav ul {
 
 nav li {
     margin-right: 40px;
+    margin-left: 30px;
     float: left;
     position: relative;
     width: 150px;
     list-style: none;
     -webkit-transition: .5s;
     transition: .5s;
+}
+
+nav li li {
+    margin-left: 0
 }
 
 #main_nav > ul > li > a, h1 {
@@ -59,9 +67,9 @@ nav li a {
     color: #000000;
 }
 
-nav li a:hover, nav li a.current {
+/* nav li a:hover, nav li a.current {
     color: #F3B802;
-}
+} */
 #main_nav ul ul {
     position: absolute;
     left: 0;
@@ -90,15 +98,15 @@ nav li li li {
 }
 
 #main_nav li:hover, #main_nav li:hover li {
-    background: #80736A;
+    background: #ddd;
 }
 
 #main_nav li li:hover, #main_nav li li:hover li {
-background: #80736A;
+    background: #bbb;
 }
 
 #main_nav li li li:hover {
-background: #80736A;
+    background: #999;
 }
 
 
@@ -163,3 +171,12 @@ aside h2 {
 footer {
     font-size: 80%;
     padding: 7px 0px 0px 20px;}
+
+#button {
+    width: 100px;
+    height: 30px;
+    background-color: #b95c14;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
