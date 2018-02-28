@@ -4,6 +4,9 @@ h2 {
   text-decoration: underline;
 }
 
+header {
+  background-image: url(../images/brewImages/cheers.jpg);
+}
 
 /* group div */
 #group {

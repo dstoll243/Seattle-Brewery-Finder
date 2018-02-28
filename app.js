@@ -135,7 +135,7 @@ function showPop() {
 
 //take elsewhere is too young
 function tooYoung() {
-  window.open('https://disneyland.disney.go.com/');
+  window.location.replace('https://disneyland.disney.go.com/');
 }
 
 older.addEventListener('click', showPop);
