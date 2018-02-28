@@ -13,6 +13,7 @@ body {
     margin: 20px auto 20px auto;
     border: 2px solid #000000;
     background-color: #ffffff;}
+
 header {
     height: 160px;
     background-image: url(../images/brewImages/cheers.jpg);
@@ -25,40 +26,109 @@ h1 {
     height: 130px;
     margin: 0px;
     text-align: center;
-    color: rgb(170, 166, 166);
+    color: #F3B802;
 }
 nav, footer {
     clear: both;
     color: #ffffff;
     background-color: #80736A;
-    height: 30px;}
+    height: 30px;
+}
+
+/* TOP NAV */
 nav ul {
     margin: 0px;
-    padding: 5px 0px 5px 30px;}
+    padding: 5px 0px 5px 30px;
+}
+
 nav li {
-    display: inline;
-    margin-right: 40px;}
+    margin-right: 40px;
+    float: left;
+    position: relative;
+    width: 150px;
+    list-style: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+#main_nav > ul > li > a, h1 {
+    text-transform: uppercase;
+  }
+
 nav li a {
-    color: #ffffff;}
+    color: #000000;
+}
+
 nav li a:hover, nav li a.current {
-    color: #000000;}
+    color: #F3B802;
+}
+#main_nav ul ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#main_nav ul ul ul {
+    left: 80%;
+    top: -5px;
+}
+nav li li {
+    padding: 8px;
+    margin-top: -2px;
+}
+
+nav li li li {
+    padding: 8px;
+    margin-top: 0px;
+}
+
+#main_nav li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#main_nav li:hover, #main_nav li:hover li {
+    background: #80736A;
+}
+
+#main_nav li li:hover, #main_nav li li:hover li {
+background: #80736A;
+}
+
+#main_nav li li li:hover {
+background: #80736A;
+}
+
+
+/* END OF NAV */
+
 section.courses {
     float: left;
     width: 659px;
-    border-right: 1px solid #eeeeee;}
+    border-right: 1px solid #eeeeee;
+}
+
 article {
     clear: both;
     overflow: auto;
-    width: 100%;}
+    width: 100%;
+}
+
 hgroup {
-    margin-top: 40px;}
+    margin-top: 40px;
+}
+
 figure {
     float: left;
     width: 290px;
     height: 220px;
     padding: 5px;
     margin: 20px;
-    border: 1px solid #eeeeee;}
+    border: 1px solid #eeeeee;
+}
+
 figcaption {
     font-size: 90%;
     text-align: left;}
@@ -84,6 +154,7 @@ h2 {
 h3 {
     margin: 0px 0px 10px 0px;
     color: rgb(177, 16, 4);
+    padding-top: 10px;
 }
 
 aside h2 {
