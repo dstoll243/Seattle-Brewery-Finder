@@ -1,39 +1,106 @@
+header, section, footer, aside, nav, article, figure, figcaption {
+  display: block;}
 
 body {
-    width: 100%;
-    margin: auto;
+  background-color: #80736A;
+  background-image: url("../images/brewImages/summerdrink.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Georgia, Times, serif;
+  line-height: 1.4em;
+  margin: 0px;}
+
+  header {
+    height: 160px;
+    background-image: url(../images/brewImages/cheers.jpg);
+    background-size: 950px;
+    background-position: right top;
   }
   
-  #logo {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    background-color: grey;
+  #logo h1 {
+    width: 940px;
+    height: 130px;
     text-align: center;
+    color: rgb(170, 166, 166);
+    font-size: 36px;
+  }
+  
+  nav, footer {
+    clear: both;
+    color: #ffffff;
+    background-color: #80736A;
+    height: 30px;
+    text-align: center;
+  }
+  
+  #main_nav ul {
+    float: left;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  #main_nav li {
+    float: left;
+    position: relative;
+    width: 225px;
+    list-style: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  #main_nav > ul > li > a, h1 {
+    text-transform: uppercase;
+  }
+  
+  #main_nav a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #000;
+  }
+  
+  #main_nav ul ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  #main_nav ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+  
+  #main_nav li:hover, #main_nav li:hover li {
+    background: #ddd;
+  }
+  
+  #main_nav li li:hover, #main_nav li li:hover li {
+    background: #bbb;
+  }
+  
+  #main_nav li li li:hover {
+    background: #999;
+  }
+  
+  #main_nav li:hover > ul {
+    visibility: visible;
+    opacity: 1;
   }
 
-  #logo h1 {
-    font-size: 45px;
-    font-weight: bolder;
-    margin-top: 30px;
-    margin-left: 30px;
-    color:goldenrod;
+  #breweryInfo {
+    height: 250px;
+    margin: 10px;
   }
   
-  nav {
-    width: 100%;
-    background-color: black;
-    height: 20px;
-    text-align: center;
+  #wrapper {
+    width: 940px;
+    margin: 20px auto 20px auto;
+    border: 2px solid #000000;
+    background-color: #ffffff;
   }
-  
-  nav a {
-    text-decoration: none;
-    font-size: 15px;
-    color: lightgray;
-    margin-right: 15%;
-  }
-  
+
   .checkbox {
     width: 80%;
     margin: auto;
@@ -62,20 +129,136 @@ body {
     font-size: 12px;
   }
 
-  section h2 {
-    text-align: center;  
-    color: goldenrod;
-    font-size: 350%;
-    margin-top: 50px;
-    margin-bottom: 50px; 
-  }
-  section p {
-      text-align: center;
-      margin-right: 25%;
-      margin-left: 25%;
-  }
+.checkbox {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
 
-  #map {
-    margin-top: 100px;
+.checkbox h3 {
+  font-size: 24px;
+}
+
+#type-place {
+  width: 80%;
+  margin: auto;
+}
+
+#type-place h3 {
+  font-size: 24px;
+}
+
+#someWords {
+  width: 950px;
+}
+
+footer {
+  position: bottom;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+section h2 {
+  text-align: center;  
+  color: goldenrod;
+  font-size: 350%;
+  margin-top: 50px;
+  margin-bottom: 50px; 
+}
+section p {
     text-align: center;
-  }
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+#map {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#popup {
+  display: block;
+  position: fixed;
+  margin-left: 500px;
+  width: 400px;
+  height: 400px;
+  background: #FFF;
+  z-index: 100;
+  -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+}
+
+/* Photo banner*/
+.container {
+  width: 940px;
+  overflow: hidden;
+  margin: 10px auto;
+  background: white;
+}
+
+/* width needs to be total of all the widths */
+
+.slideshow {
+  height: 233px;
+  width: 4300px;
+  margin-bottom: 5px;
+  /* font-size: 0; */
+}
+.slideshow img {
+  margin-bottom: 10px;
+  padding-right: 2px;
+  height: 233px;
+  width: 350;
+}
+.slideshow img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+} 
+.slideshow img:hover {
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 5px;
+  -moz-box-shadow: 0px 3px 5px;
+  box-shadow: 0px 3px 5px;
+}
+.first {
+  -webkit-animation: bannermove 45s linear infinite;
+  -moz-animation: bannermove 45s linear infinite;
+  -ms-animation: bannermove 45s linear infinite;
+  -o-animation: bannermove 45s linear infinite;
+  animation: bannermove 45s linear infinite;
+}
+
+/* margin left needs to be total of all the images widths once they are scaled down*/
+
+@keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -100%;}
+} 
+@-moz-keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -100%;}
+}
+@-webkit-keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -100%;}
+}
+@-ms-keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -100%;}
+}
+@-o-keyframes "bannermove" {
+  0% {margin-left: 0px;}
+  100% {margin-left: -100%;}
+}
+
+/* Photo banner code ends*/

@@ -31,6 +31,7 @@ function makeBrews() {
 makeBrews();
 console.log(allBrews);
 
+
 // var form = document.getElementById('form');
 var rBrewArray = [];
 
@@ -90,8 +91,9 @@ function randomBrew() {
 }
 //button event listener
 var button = document.getElementById('button');
-button.addEventListener('click', doAll);
-
+if(button) {
+  button.addEventListener('click', doAll);
+}
 
 //randomize one result within the array and open its page.
 function openOne() {
@@ -116,3 +118,26 @@ function doAll() {
   randomBrew();
   openOne();
 }
+
+//Home menu popup
+var ageCheck = false;
+var older = document.getElementById('older');
+var younger = document.getElementById('young');
+var popUp = document.getElementById('popup');
+
+//hide popup if 21 and older
+function showPop() {
+  ageCheck = true;
+  if(ageCheck === true) {
+    popUp.style.display = 'none';
+  }
+}
+
+//take elsewhere is too young
+function tooYoung() {
+  window.location.replace('https://disneyland.disney.go.com/');
+}
+
+older.addEventListener('click', showPop);
+younger.addEventListener('click', tooYoung);
+
