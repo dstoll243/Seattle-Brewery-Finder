@@ -31,6 +31,7 @@ function makeBrews() {
 makeBrews();
 console.log(allBrews);
 
+
 // var form = document.getElementById('form');
 var rBrewArray = [];
 
@@ -139,3 +140,4 @@ function tooYoung() {
 
 older.addEventListener('click', showPop);
 younger.addEventListener('click', tooYoung);
+
