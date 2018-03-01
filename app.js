@@ -131,6 +131,7 @@ function showPop() {
   localStorage.setItem('age', true);
   if(ageCheck === true) {
     popUp.style.display = 'none';
+    localStorage.setItem('popupWasShown', '1');
   }
 }
 if(localStorage.getItem('age') === 'true') {
@@ -141,11 +142,19 @@ if(localStorage.getItem('age') === 'true') {
 
 
 
+if (localStorage.getItem('popupWasShown') === '1') {
+  popUp.style.display = 'none';
+}
+
+// if (localStorage.getItem('popupWasShown') === '2') {
+//   window.location.replace('https://disneyland.disney.go.com/');
+// }
+
 //take elsewhere is too young
 function tooYoung() {
-  window.open('https://disneyland.disney.go.com/');
+  window.location.replace('https://disneyland.disney.go.com/');
+  localStorage.setItem('popupWasShown', '2');
 }
 
 older.addEventListener('click', showPop);
 younger.addEventListener('click', tooYoung);
-
