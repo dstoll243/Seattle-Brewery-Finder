@@ -84,10 +84,10 @@ function randomBrew() {
   }
 
   // local storage
-  var strBrew = JSON.stringify(rBrewArray);
-  localStorage.setItem('Random Breweries', strBrew);
-  var breweries = JSON.parse(strBrew);
-  console.log(breweries);
+  // var strBrew = JSON.stringify(rBrewArray);
+  localStorage.setItem('Random Breweries', rBrewArray);
+  // var breweries = JSON.parse(strBrew);
+  // console.log(breweries);
 }
 //button event listener
 var button = document.getElementById('button');
@@ -128,7 +128,7 @@ var popUp = document.getElementById('popup');
 //hide popup if 21 and older
 function showPop() {
   ageCheck = true;
-  localStorage.setItem('age', true);
+  // localStorage.setItem('age', true);
   if(ageCheck === true) {
     popUp.style.display = 'none';
     localStorage.setItem('popupWasShown', '1');
@@ -146,7 +146,7 @@ if (localStorage.getItem('popupWasShown') === '1') {
 //take elsewhere is too young
 function tooYoung() {
   window.location.replace('https://disneyland.disney.go.com/');
-  localStorage.setItem('popupWasShown', '2');
+  // localStorage.setItem('popupWasShown', '2');
 }
 
 older.addEventListener('click', showPop);
