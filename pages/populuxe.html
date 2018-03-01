@@ -3,20 +3,89 @@
 <head>
   <meta charset="utf-8" />
   <title>Populuxe Brewing</title>
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/breweries.css" />
   <link rel="stylesheet" type="text/css" href="../css/reset.css" />
 </head>
 <body>
-  <header>
+  <div id="wrapper">
+    <header>
       <div id="logo">
           <h1>Seattle Brewery Finder</h1>
       </div>
-      <nav>
-          <a href="">Home</a>
-          <a href="">Map</a>
-          <a href="">Breweries</a>
-          <a href="">About Us</a>
-      </nav>
+      <nav id="main_nav">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="../index.html">Finder</a></li>
+            <li><a>Breweries</a>
+            <ul>
+              <li>
+                <a>Ballard</a>
+                <ul>
+                  <li><a href="peddler.html">Peddler Brewing</a></li>
+                  <li><a href="populuxe.html">Populuxe Brewing</a></li>
+                  <li><a href="reubens.html">Reuben's Brews</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Capitol Hill</a>
+                <ul>
+                  <li><a href="optimism.html">Optimism Brewing</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Central District</a>
+                <ul>
+                  <li><a href="standard.html">Standard Brewing</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Fremont</a>
+                <ul>
+                  <li><a href="fremont.html">Fremont Brewing</a></li>
+                  <li><a href="outlander.html">Outlander Brewing</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Interbay</a>
+                <ul>
+                  <li><a href="holymt.html">Holy Mountain Brewing</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Lake City</a>
+                <ul>
+                  <li><a href="hellbent.html">Hellbent Brewing</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Magnolia</a>
+                <ul>
+                  <li><a href="urbanfam.html">Urban Family Brewing</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Pike Place</a>
+                <ul>
+                  <li><a href="cloudburst.html">Cloudburst Brewing</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>SoDo</a>
+                <ul>
+                  <li><a href="twobeers.html">Two Beers Brewing</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Ravenna</a>
+                <ul>
+                  <li><a href="ravenna.html">Ravenna Brewing</a></li>
+                </ul>
+              </li>
+            </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </nav>
   </header>
   <section>
     <div id='breweryInfo'>
@@ -27,14 +96,14 @@
     <div id='social'>
       <ul>
         <li><a href="https://www.populuxebrewing.com/">Populuxe Brewing Website</a></li>
-        <li><a href="https://www.facebook.com/PopuluxeBrewing/"><img src="../images/icons/facebook.png" alt="facebook logo">-Facebook</a></li>
-        <li><a href="https://twitter.com/PopuluxeBrewing"><img src="../images/icons/twitter.png" alt="twitter logo">-Twitter</a></li>
-        <li><a href="https://www.instagram.com/populuxebrewing/"><img src="../images/icons/instagram.png" alt="instagram logo">-Instagram</a></li> 
-        <li><a href="https://untappd.com/PopuluxeBrewing"><img src="../images/icons/untappd.png" alt="untappd logo">-Untappd</a></li>
+        <li><a href="https://www.facebook.com/PopuluxeBrewing/"><img src="../images/icons/facebook.png" alt="facebook logo"> Facebook</a></li>
+        <li><a href="https://twitter.com/PopuluxeBrewing"><img src="../images/icons/twitter.png" alt="twitter logo"> Twitter</a></li>
+        <li><a href="https://www.instagram.com/populuxebrewing/"><img src="../images/icons/instagram.png" alt="instagram logo"> Instagram</a></li> 
+        <li><a href="https://untappd.com/PopuluxeBrewing"><img src="../images/icons/untappd.png" alt="untappd logo"> Untappd</a></li>
       </ul>
     </div>
     <div id='map'>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10748.103980485528!2d-122.3680496!3d47.6644914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91db7bede81e8387!2sPopuluxe+Brewing!5e0!3m2!1sen!2sus!4v1519277637606" width="900" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10748.103980485528!2d-122.3680496!3d47.6644914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91db7bede81e8387!2sPopuluxe+Brewing!5e0!3m2!1sen!2sus!4v1519277637606" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div id="address">
         <ul>
@@ -51,9 +120,10 @@
           <li>Email: populuxebrewing.com</li>
         </ul>
       </div>
-  </section>
-  <footer>
-    <p>&copy Seattle Brewery Finders</p>
-  </footer>
+    </section>
+    <footer>
+      <p>&copy Seattle Brewery Finders</p>
+    </footer>
+  </div>
 </body>
 </html>

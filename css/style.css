@@ -5,9 +5,10 @@ body {
 
 #logo {
   width: 100%;
-  height: 50px;
+  height: 80px;
   padding: 10px;
-  background-color: grey;
+  background-image: url(../images/brewImages/cheers.jpg);
+  background-position: right top;
   text-align: left;
 }
 
