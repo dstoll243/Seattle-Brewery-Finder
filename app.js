@@ -28,6 +28,7 @@ function makeBrews() {
   new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'pages/outlander.html');
   new Brewery('Pike Brewing', 'yes', 'no', 'on-site', 'no', 'pages/pike.html');
   new Brewery('Seapine Brewing', 'yes', 'yes', 'no', 'no', 'pages/seapine.html');
+  new Brewery('Outer Planet Brewing', 'yes', 'yes', 'on-site', 'no', 'pages/outerplanet.html');
 }
 
 makeBrews();
@@ -60,7 +61,7 @@ function randomBrew() {
     rBrewArray.push(allBrews[10]);
     console.log(rBrewArray);
   }
-  // yes, yes, foodn, no - fremont
+  // yes, yes, foodn, no - fremont / seapine
   if(document.getElementById('kidsy').checked && document.getElementById('petsy').checked && document.getElementById('foodn').checked && document.getElementById('eventsn').checked) {
     rBrewArray.push(allBrews[5]);
     rBrewArray.push(allBrews[14]);
@@ -88,6 +89,12 @@ function randomBrew() {
   // yes, no, site, no - pike
   if(document.getElementById('kidsy').checked && document.getElementById('petsn').checked && document.getElementById('site').checked && document.getElementById('eventsn').checked) {
     rBrewArray.push(allBrews[13]);
+    console.log(rBrewArray);
+  }
+
+  // yes, yes, site, no - outerplanet
+  if(document.getElementById('kidsy').checked && document.getElementById('petsy').checked && document.getElementById('site').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[15]);
     console.log(rBrewArray);
   }
 
