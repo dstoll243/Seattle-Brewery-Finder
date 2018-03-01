@@ -49,11 +49,9 @@ header {
 
 /* bio class */
 .bio {
-  /* float: right; */
   text-align: left;
   width: 100%;
   height: 300px;
-  /* border: 1px solid black; */
 }
 
 .bio h3 {
@@ -61,8 +59,6 @@ header {
   font-weight: bold;
   margin-top: 10px;
   height: 30px;
-  /* width: 400px; */
-  /* float: left; */
   margin-right: 0px;
 }
 
@@ -70,14 +66,12 @@ header {
   font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
-  /* float: left; */
   width: 100%;
 }
 
 .bio p{
   font-size: 16px;
-  margin-top: 10px;
-  /* float: left; */
+  padding-top: 50px;
 }
 
 .bio .contact {
@@ -86,10 +80,6 @@ header {
 
 /* contact class */
 .contact {
-  /* width: 300px;
-  height: 30px;
-  float: right;
-  margin-top: 5px; */
   display: inline;
 }
 
@@ -113,4 +103,31 @@ header {
   font-weight: bold;
   margin: 0;
   display: inline-block;
+}
+
+.contact2 {
+  display: inline;
+  width: 600px;
+}
+
+.contact2 h3 {
+  float: left;
+}
+
+.contact2 h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+}
+
+.contact2 .person {
+  float: left;
+  width: 200px;
+}
+
+.contact2 .website {
+  float: left;
+  width: 300px;
+  margin-left: 75px;
 }
