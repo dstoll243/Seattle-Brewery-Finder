@@ -128,9 +128,14 @@ var popUp = document.getElementById('popup');
 //hide popup if 21 and older
 function showPop() {
   ageCheck = true;
+  localStorage.setItem('age', true);
   if(ageCheck === true) {
     popUp.style.display = 'none';
   }
+}
+
+if(localStorage.getItem('age') === 'true') {
+  popUp.style.display = 'none';
 }
 
 //take elsewhere is too young
