@@ -31,7 +31,6 @@ function makeBrews() {
 makeBrews();
 console.log(allBrews);
 
-
 // var form = document.getElementById('form');
 var rBrewArray = [];
 
@@ -124,6 +123,7 @@ var ageCheck = false;
 var older = document.getElementById('older');
 var younger = document.getElementById('young');
 var popUp = document.getElementById('popup');
+var ofAge = localStorage.getItem("ageCheck");
 
 //hide popup if 21 and older
 function showPop() {
@@ -134,6 +134,13 @@ function showPop() {
     localStorage.setItem('popupWasShown', '1');
   }
 }
+if(localStorage.getItem('age') === 'true') {
+  popUp.style.display = 'none';
+}
+
+
+
+
 
 if (localStorage.getItem('popupWasShown') === '1') {
   popUp.style.display = 'none';
