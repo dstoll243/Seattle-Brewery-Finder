@@ -31,7 +31,6 @@ function makeBrews() {
 makeBrews();
 console.log(allBrews);
 
-
 // var form = document.getElementById('form');
 var rBrewArray = [];
 
@@ -84,10 +83,10 @@ function randomBrew() {
   }
 
   // local storage
-  var strBrew = JSON.stringify(rBrewArray);
-  localStorage.setItem('Random Breweries', strBrew);
-  var breweries = JSON.parse(strBrew);
-  console.log(breweries);
+  // var strBrew = JSON.stringify(rBrewArray);
+  localStorage.setItem('Random Breweries', rBrewArray);
+  // var breweries = JSON.parse(strBrew);
+  // console.log(breweries);
 }
 //button event listener
 var button = document.getElementById('button');
@@ -124,18 +123,37 @@ var ageCheck = false;
 var older = document.getElementById('older');
 var younger = document.getElementById('young');
 var popUp = document.getElementById('popup');
+var ofAge = localStorage.getItem("ageCheck");
 
 //hide popup if 21 and older
 function showPop() {
   ageCheck = true;
+  // localStorage.setItem('age', true);
   if(ageCheck === true) {
     popUp.style.display = 'none';
+    localStorage.setItem('popupWasShown', '1');
   }
 }
+if(localStorage.getItem('age') === 'true') {
+  popUp.style.display = 'none';
+}
+
+
+
+
+
+if (localStorage.getItem('popupWasShown') === '1') {
+  popUp.style.display = 'none';
+}
+
+// if (localStorage.getItem('popupWasShown') === '2') {
+//   window.location.replace('https://disneyland.disney.go.com/');
+// }
 
 //take elsewhere is too young
 function tooYoung() {
   window.location.replace('https://disneyland.disney.go.com/');
+  // localStorage.setItem('popupWasShown', '2');
 }
 
 older.addEventListener('click', showPop);
