@@ -126,18 +126,20 @@ var popUp = document.getElementById('popup');
 var ofAge = localStorage.getItem("ageCheck");
 
 //hide popup if 21 and older
-function doWePop () {
-  if (ofAge === null) {
-    showPop();
-  else (showPop());
-  }
 function showPop() {
-  ofAge = true;
-  if(ofAge === true) {
+  ageCheck = true;
+  localStorage.setItem('age', true);
+  if(ageCheck === true) {
     popUp.style.display = 'none';
   }
-  localStorage.setItem("ageCheck", true);
 }
+if(localStorage.getItem('age') === 'true') {
+  popUp.style.display = 'none';
+}
+
+
+
+
 
 //take elsewhere is too young
 function tooYoung() {
@@ -146,3 +148,4 @@ function tooYoung() {
 
 older.addEventListener('click', showPop);
 younger.addEventListener('click', tooYoung);
+
