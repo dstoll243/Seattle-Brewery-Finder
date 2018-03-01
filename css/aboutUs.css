@@ -85,13 +85,13 @@ header {
 
 .person {
   float: left;
-  width: 150px;
+  width: 200px;
 }
 
 .website {
   float: left;
   width: 300px;
-  margin-left: 145px;
+  margin-left: 95px;
 }
 
 .contact h3 {
