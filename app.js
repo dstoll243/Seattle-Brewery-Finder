@@ -27,6 +27,7 @@ function makeBrews() {
   new Brewery('Populuxe Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/populuxe.html');
   new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'pages/outlander.html');
   new Brewery('Pike Brewing', 'yes', 'no', 'on-site', 'no', 'pages/pike.html');
+  new Brewery('Seapine Brewing', 'yes', 'yes', 'no', 'no', 'pages/seapine.html');
 }
 
 makeBrews();
@@ -62,6 +63,7 @@ function randomBrew() {
   // yes, yes, foodn, no - fremont
   if(document.getElementById('kidsy').checked && document.getElementById('petsy').checked && document.getElementById('foodn').checked && document.getElementById('eventsn').checked) {
     rBrewArray.push(allBrews[5]);
+    rBrewArray.push(allBrews[14]);
     console.log(rBrewArray);
   }
   // yes, yes, truck, no = Urban family
@@ -90,10 +92,7 @@ function randomBrew() {
   }
 
   // local storage
-  // var strBrew = JSON.stringify(rBrewArray);
   localStorage.setItem('Random Breweries', JSON.stringify(rBrewArray));
-  // JSON.parse(strBrew);
-  // console.log(strBrew);
 }
 
 var arrayData = [];
@@ -101,7 +100,6 @@ var storedData = localStorage.getItem('Random Breweries');
 if (storedData) {
   arrayData.push(JSON.parse(storedData));
 }
-
 
 //button event listener
 var button = document.getElementById('button');
