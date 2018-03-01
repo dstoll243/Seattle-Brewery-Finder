@@ -26,6 +26,7 @@ function makeBrews() {
   new Brewery('Hellbent Brewing', 'no', 'yes', 'food truck', 'yes', 'pages/hellbent.html');
   new Brewery('Populuxe Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/populuxe.html');
   new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'pages/outlander.html');
+  new Brewery('Pike Brewing', 'yes', 'no', 'on-site', 'no', 'pages/pike.html');
 }
 
 makeBrews();
@@ -82,12 +83,17 @@ function randomBrew() {
     rBrewArray.push(allBrews[11]);
     console.log(rBrewArray);
   }
+  // yes, no, site, no - pike
+  if(document.getElementById('kidsy').checked && document.getElementById('petsn').checked && document.getElementById('site').checked && document.getElementById('eventsn').checked) {
+    rBrewArray.push(allBrews[13]);
+    console.log(rBrewArray);
+  }
 
   // local storage
-  // var strBrew = JSON.stringify(rBrewArray);
-  localStorage.setItem('Random Breweries', rBrewArray);
-  // var breweries = JSON.parse(strBrew);
-  // console.log(breweries);
+  var strBrew = JSON.stringify(rBrewArray);
+  localStorage.setItem('Random Breweries', strBrew);
+  JSON.parse(strBrew);
+  console.log(strBrew);
 }
 //button event listener
 var button = document.getElementById('button');
