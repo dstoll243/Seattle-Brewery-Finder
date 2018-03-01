@@ -72,7 +72,7 @@ body {
     top: 0;
   }
   
-  #main_nav li:hover li:focus, #main_nav li:hover li {
+  #main_nav li:hover, #main_nav li:hover li {
     background: #ddd;
   }
   
@@ -80,7 +80,7 @@ body {
     background: #bbb;
   }
   
-  #main_nav li li li:focus {
+  #main_nav li li li:hover {
     background: #999;
   }
   
