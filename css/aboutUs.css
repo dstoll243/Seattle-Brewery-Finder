@@ -61,7 +61,7 @@ header {
   font-weight: bold;
   margin-top: 10px;
   height: 30px;
-  width: 400px;
+  /* width: 400px; */
   /* float: left; */
   margin-right: 0px;
 }
@@ -80,12 +80,32 @@ header {
   /* float: left; */
 }
 
+.bio .contact {
+  float: left;
+}
+
 /* contact class */
 .contact {
-  width: 300px;
+  /* width: 300px;
   height: 30px;
   float: right;
-  margin-top: 5px;
+  margin-top: 5px; */
+  display: inline;
+}
+
+.person {
+  float: left;
+  width: 150px;
+}
+
+.website {
+  float: left;
+  width: 300px;
+  margin-left: 145px;
+}
+
+.contact h3 {
+  float: left;
 }
 
 .contact h4 {
