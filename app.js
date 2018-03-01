@@ -90,11 +90,19 @@ function randomBrew() {
   }
 
   // local storage
-  var strBrew = JSON.stringify(rBrewArray);
-  localStorage.setItem('Random Breweries', strBrew);
-  JSON.parse(strBrew);
-  console.log(strBrew);
+  // var strBrew = JSON.stringify(rBrewArray);
+  localStorage.setItem('Random Breweries', JSON.stringify(rBrewArray));
+  // JSON.parse(strBrew);
+  // console.log(strBrew);
 }
+
+var arrayData = [];
+var storedData = localStorage.getItem('Random Breweries');
+if (storedData) {
+  arrayData.push(JSON.parse(storedData));
+}
+
+
 //button event listener
 var button = document.getElementById('button');
 if(button) {
