@@ -29,6 +29,7 @@ function makeBrews() {
   new Brewery('Pike Brewing', 'yes', 'no', 'on-site', 'no', 'pages/pike.html');
   new Brewery('Seapine Brewing', 'yes', 'yes', 'no', 'no', 'pages/seapine.html');
   new Brewery('Outer Planet Brewing', 'yes', 'yes', 'on-site', 'no', 'pages/outerplanet.html');
+  new Brewery('Georgetown Brewery', 'yes', 'yes', 'no', 'no', 'pages/georgetown.html');
 }
 
 makeBrews();
@@ -65,6 +66,7 @@ function randomBrew() {
   if(document.getElementById('kidsy').checked && document.getElementById('petsy').checked && document.getElementById('foodn').checked && document.getElementById('eventsn').checked) {
     rBrewArray.push(allBrews[5]);
     rBrewArray.push(allBrews[14]);
+    rBrewArray.push(allBrews[16]);
     console.log(rBrewArray);
   }
   // yes, yes, truck, no = Urban family
