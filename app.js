@@ -35,10 +35,8 @@ function makeBrews() {
 makeBrews();
 console.log(allBrews);
 
-
 // var form = document.getElementById('form');
 var rBrewArray = [];
-
 
 function randomBrew() {
   // no, no, onsite, no - Standard & Outlander
@@ -104,11 +102,15 @@ function randomBrew() {
   localStorage.setItem('Random Breweries', JSON.stringify(rBrewArray));
 }
 
-var arrayData = [];
-var storedData = localStorage.getItem('Random Breweries');
-if (storedData) {
-  arrayData.push(JSON.parse(storedData));
-}
+// // var rerun = document.getElementById('rerun');
+// var arrayData = [];
+// var storedData = localStorage.getItem('Random Breweries');
+// if (storedData) {
+//   arrayData.push(JSON.parse(storedData));
+//   // rerun.style.display='block';
+// } else {
+//   // rerun.style.display='none';
+// }
 
 //button event listener
 var button = document.getElementById('button');
