@@ -8,7 +8,8 @@ body {
   background-position: center;
   font-family: Georgia, Times, serif;
   line-height: 1.4em;
-  margin: 0px;}
+  margin: 0px;
+}
 
 header {
   height: 160px;
@@ -144,10 +145,14 @@ section div p {
   font-size: 100%;
   color: black;
   margin: 1px 4%;
-  padding-top: 5px;
+  padding: 5px;
 }
 
 #social ul li img {
   height: 15px;
   width: 15px;
+}
+
+#social a:hover {
+  color: #efefef;
 }

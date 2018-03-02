@@ -157,9 +157,7 @@ function showPop() {
     localStorage.setItem('popupWasShown', '1');
   }
 }
-if(localStorage.getItem('age') === 'true') {
-  popUp.style.display = 'none';
-}
+
 if (localStorage.getItem('popupWasShown') === '1') {
   popUp.style.display = 'none';
 }
@@ -173,6 +171,5 @@ function tooYoung() {
   window.location.replace('https://disneyland.disney.go.com/');
   // localStorage.setItem('popupWasShown', '2');
 }
-
 older.addEventListener('click', showPop);
 younger.addEventListener('click', tooYoung);
