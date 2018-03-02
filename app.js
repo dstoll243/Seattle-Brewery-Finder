@@ -13,23 +13,23 @@ function Brewery(name, kids, pets, food, events, page) {
   allBrews.push(this);
 }
 function makeBrews() {
-  new Brewery('Standard Brewing', 'no', 'no', 'on-site', 'no', 'pages/standard.html');
-  new Brewery('Reuben\'s Brews', 'no', 'yes', 'food truck', 'yes', 'pages/reubens.html');
-  new Brewery('Two Beers Brewing', 'no', 'yes', 'on-site', 'no', 'pages/twobeers.html');
-  new Brewery('Peddler Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/peddler.html');
-  new Brewery('CloudBurst Brewing', 'no', 'yes', 'no', 'no', 'pages/cloudburst.html');
-  new Brewery('Fremont Brewing', 'yes', 'yes', 'no', 'yes', 'pages/fremont.html');
-  new Brewery('Holy Mountain Brewing', 'no', 'no', 'no', 'no', 'pages/holymt.html');
-  new Brewery('Optimism Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/optimism.html');
-  new Brewery('Ravenna Brewing Company', 'yes', 'yes', 'food truck', 'yes', 'pages/ravenna.html');
-  new Brewery('Urban Family Brewing', 'yes', 'yes', 'food truck', 'no', 'pages/urbanfam.html');
-  new Brewery('Hellbent Brewing', 'no', 'yes', 'food truck', 'yes', 'pages/hellbent.html');
-  new Brewery('Populuxe Brewing', 'yes', 'yes', 'food truck', 'yes', 'pages/populuxe.html');
-  new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'pages/outlander.html');
-  new Brewery('Pike Brewing', 'yes', 'no', 'on-site', 'no', 'pages/pike.html');
-  new Brewery('Seapine Brewing', 'yes', 'yes', 'no', 'no', 'pages/seapine.html');
-  new Brewery('Outer Planet Brewing', 'yes', 'yes', 'on-site', 'no', 'pages/outerplanet.html');
-  new Brewery('Georgetown Brewery', 'yes', 'yes', 'no', 'no', 'pages/georgetown.html');
+  new Brewery('Standard Brewing', 'no', 'no', 'on-site', 'no', 'standard.html');
+  new Brewery('Reuben\'s Brews', 'no', 'yes', 'food truck', 'yes', 'reubens.html');
+  new Brewery('Two Beers Brewing', 'no', 'yes', 'on-site', 'no', 'twobeers.html');
+  new Brewery('Peddler Brewing', 'yes', 'yes', 'food truck', 'yes', 'peddler.html');
+  new Brewery('CloudBurst Brewing', 'no', 'yes', 'no', 'no', 'cloudburst.html');
+  new Brewery('Fremont Brewing', 'yes', 'yes', 'no', 'yes', 'fremont.html');
+  new Brewery('Holy Mountain Brewing', 'no', 'no', 'no', 'no', 'holymt.html');
+  new Brewery('Optimism Brewing', 'yes', 'yes', 'food truck', 'yes', 'optimism.html');
+  new Brewery('Ravenna Brewing Company', 'yes', 'yes', 'food truck', 'yes', 'ravenna.html');
+  new Brewery('Urban Family Brewing', 'yes', 'yes', 'food truck', 'no', 'urbanfam.html');
+  new Brewery('Hellbent Brewing', 'no', 'yes', 'food truck', 'yes', 'hellbent.html');
+  new Brewery('Populuxe Brewing', 'yes', 'yes', 'food truck', 'yes', 'populuxe.html');
+  new Brewery('Outlander Brewing Company', 'no', 'no', 'on-site', 'no', 'outlander.html');
+  new Brewery('Pike Brewing', 'yes', 'no', 'on-site', 'no', 'pike.html');
+  new Brewery('Seapine Brewing', 'yes', 'yes', 'no', 'no', 'seapine.html');
+  new Brewery('Outer Planet Brewing', 'yes', 'yes', 'on-site', 'no', 'outerplanet.html');
+  new Brewery('Georgetown Brewery', 'yes', 'yes', 'no', 'no', 'georgetown.html');
 }
 
 makeBrews();

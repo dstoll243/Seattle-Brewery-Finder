@@ -4,7 +4,10 @@ var rerun = document.getElementById('rerun');
 var arrayData = [];
 var storedData = localStorage.getItem('Random Breweries');
 if (storedData) {
-  arrayData.push(JSON.parse(storedData));
+  var parsedData = JSON.parse(storedData);
+  for (var i = 0; i < parsedData.length; i++) {
+    arrayData.push(parsedData[i]);
+  }
   rerun.style.display='block';
 } else {
   rerun.style.display='none';
@@ -13,8 +16,8 @@ if (storedData) {
 function openOne() {
   if(arrayData.length > 0) {
     var choose = Math.floor(Math.random() * arrayData.length);
-    arrayData = arrayData[choose];
-    window.open(arrayData.page);
+    // arrayData = arrayData[choose];
+    window.open(arrayData[choose].page);
   }else {alert('Sorry, no brew match your description');
     return;
   }
