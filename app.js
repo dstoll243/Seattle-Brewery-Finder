@@ -123,7 +123,6 @@ var ageCheck = false;
 var older = document.getElementById('older');
 var younger = document.getElementById('young');
 var popUp = document.getElementById('popup');
-var ofAge = localStorage.getItem("ageCheck");
 
 //hide popup if 21 and older
 function showPop() {
