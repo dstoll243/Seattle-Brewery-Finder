@@ -156,3 +156,21 @@ section div p {
 #social a:hover {
   color: #efefef;
 }
+
+#rerun {
+  width: 500px;
+  margin-bottom: 20px;
+  margin-left: 50%;
+}
+
+#rerun p {
+  font-weight: bolder;
+}
+
+#btn2 {
+  width: 75px;
+  height: 30px;
+  background-color: #b95c14;
+  color: white;
+  border-radius: 5px;
+}
