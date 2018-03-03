@@ -17,7 +17,7 @@ function openOne() {
   if(arrayData.length > 0) {
     var choose = Math.floor(Math.random() * arrayData.length);
     // arrayData = arrayData[choose];
-    window.open(arrayData[choose].page);
+    window.location.replace(arrayData[choose].page);
   }else {alert('Sorry, no brew match your description');
     return;
   }
