@@ -123,7 +123,7 @@ function openOne() {
   if(rBrewArray.length > 0) {
     var choose = Math.floor(Math.random() * rBrewArray.length);
     rBrewArray = rBrewArray[choose];
-    window.open(rBrewArray.page);
+    window.location.replace(rBrewArray.page);
   }else {alert('Sorry, no brew match your description');
     return;
   }
