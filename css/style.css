@@ -111,8 +111,6 @@ section div p {
 footer{
   clear: both;
   position: bottom;
-  /* margin-top: 10px; */
-  /* bottom: 0; */
   width: 100%;
   text-align: center;
   font-size: 12px;

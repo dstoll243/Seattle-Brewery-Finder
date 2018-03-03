@@ -63,9 +63,6 @@ nav li a {
     color: #000000;
 }
 
-/* nav li a:hover, nav li a.current {
-    color: #F3B802;
-} */
 #main_nav ul ul {
     position: absolute;
     left: 0;
@@ -133,7 +130,6 @@ figure {
     height: 220px;
     padding: 5px;
     margin: 20px;
-    /* border: 1px solid #eeeeee; */
 }
 
 figcaption {
