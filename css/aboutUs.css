@@ -1,3 +1,7 @@
+#logo h1 {
+  padding-top: 10px;
+}
+
 h2 {
   font-size: 36px;
   font-weight: bold;
@@ -27,23 +31,27 @@ header {
 
 /* mastermind class */
 .masterminds {
-  width: 75%;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 85%;
+  margin: 50px auto;
 }
 
-.masterminds img {
+.masterminds .name {
   border: 2px solid black;
+  float: left;
+  margin-right: 10px;
+}
+
+.masterminds .name2 {
+  border: 2px solid black;
+  float: right;
+  /* margin-bottom: 10px; */
 }
 
 /* bio class */
 .bio {
-  float: right;
   text-align: left;
-  width: 80%;
+  width: 100%;
   height: 300px;
-  /* border: 1px solid black; */
 }
 
 .bio h3 {
@@ -51,33 +59,74 @@ header {
   font-weight: bold;
   margin-top: 10px;
   height: 30px;
-  float: left;
+  margin-right: 0px;
 }
 
 .bio h4 {
   font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
-  float: left;
   width: 100%;
 }
 
 .bio p{
   font-size: 16px;
-  margin-top: 10px;
+  padding-top: 50px;
+}
+
+.bio .contact {
   float: left;
 }
 
 /* contact class */
 .contact {
+  display: inline;
+}
+
+.person {
+  float: left;
+  width: 200px;
+}
+
+.website {
+  float: left;
   width: 300px;
-  height: 30px;
-  float: right;
-  margin-top: 5px;
+  margin-left: 95px;
+}
+
+.contact h3 {
+  float: left;
 }
 
 .contact h4 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  display: inline-block;
+}
+
+.contact2 {
+  display: inline;
+}
+
+.contact2 h3 {
+  float: left;
+}
+
+.contact2 h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+}
+
+.contact2 .person {
+  float: left;
+  width: 200px;
+}
+
+.contact2 .website {
+  float: left;
+  width: 300px;
+  margin-left: 75px;
 }

@@ -101,26 +101,6 @@ body {
     background-color: #ffffff;
   }
 
-  .checkbox {
-    width: 80%;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-  
-  .checkbox h3 {
-    font-size: 24px;
-  }
-  
-  #type-place {
-    width: 80%;
-    margin: auto;
-  }
-  
-  #type-place h3 {
-    font-size: 24px;
-  }
-  
   footer {
     position: bottom;
     bottom: 0;
@@ -128,30 +108,6 @@ body {
     text-align: center;
     font-size: 12px;
   }
-
-.checkbox {
-  width: 80%;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-.checkbox h3 {
-  font-size: 24px;
-}
-
-#type-place {
-  width: 80%;
-  margin: auto;
-}
-
-#type-place h3 {
-  font-size: 24px;
-}
-
-#someWords {
-  width: 950px;
-}
 
 footer {
   position: bottom;
@@ -161,34 +117,33 @@ footer {
   font-size: 12px;
 }
 
-section h2 {
-  text-align: center;  
-  color: goldenrod;
-  font-size: 350%;
-  margin-top: 50px;
-  margin-bottom: 50px; 
-}
 section p {
+  margin-top: 25px;
     text-align: center;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: 20px;
 }
 
 #map {
-  margin-top: 100px;
+  margin-top: 25px;
   text-align: center;
 }
 
 #popup {
   display: block;
   position: fixed;
-  margin-left: 500px;
+  margin-left: 250px;
   width: 400px;
-  height: 400px;
+  height: 200px;
   background: #FFF;
   z-index: 100;
   -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
   box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 30px;
 }
 
 /* Photo banner*/
@@ -220,7 +175,7 @@ section p {
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 } 
-.slideshow img:hover {
+/* .slideshow img:hover {
   -webkit-transform: scale(1.2);
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -229,7 +184,7 @@ section p {
   -webkit-box-shadow: 0px 3px 5px;
   -moz-box-shadow: 0px 3px 5px;
   box-shadow: 0px 3px 5px;
-}
+} */
 .first {
   -webkit-animation: bannermove 45s linear infinite;
   -moz-animation: bannermove 45s linear infinite;
@@ -262,3 +217,39 @@ section p {
 }
 
 /* Photo banner code ends*/
+
+#popup h3 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#popup p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#older {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: #6e8b3d;
+  border-radius: 15px;
+}
+
+#older:hover {
+  background-color: #a2cd5a;
+  color: black;
+}
+
+#young {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: #b22222;
+  border-radius: 15px;
+}
+
+#young:hover {
+  background-color: #ff4040;
+  color: black;
+}
